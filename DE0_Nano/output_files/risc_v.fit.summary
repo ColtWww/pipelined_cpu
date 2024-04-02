@@ -1,0 +1,16 @@
+Fitter Status : Failed - Wed Mar 27 15:00:37 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : risc_v
+Top-level Entity Name : led
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 11,535 / 22,320 ( 52 % )
+    Total combinational functions : 8,316 / 22,320 ( 37 % )
+    Dedicated logic registers : 4,537 / 22,320 ( 20 % )
+Total registers : 4537
+Total pins : 6 / 154 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 534,144 / 608,256 ( 88 % )
+Embedded Multiplier 9-bit elements : 8 / 132 ( 6 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,1859 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1017 276 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 8301906.316233 8521867.833252
+cursor 9771000.000000
+marker 8451000.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 446
+; marker line index
+markerPos 487
+
+; rename signal list
+; addRenameSig new_name org_name
+activeDirFile "" "/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/inter.fsdb"
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_source" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_pc" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_d_pc" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_d_priv" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/decoder_fetch_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[31:16]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_rs2_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[28]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_rs1_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[27]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_rd_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[26]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_csr_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[25]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_div_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[24]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_mul_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[23]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_branch_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[22]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_lsu_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[21]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_atomic_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[20]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_exe_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[19]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_invalid_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[18]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_page_fault_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[17]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_fault_1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[16]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/decoder_fetch_0" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[15:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/rs2" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[12]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/rs1" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[11]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/rd" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[10]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/csr" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[9]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/div" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[8]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/mul" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[7]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/branch" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[6]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/lsu" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[5]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/atomic" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[4]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/exe" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[3]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/invalid" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[2]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_page_fault" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[1]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_decoder/fetch_fault" "/tb_top/u_riscv_core/u_decoder/fetch_in_info[0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[5:0]rob_rat" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[5:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[37:6] rob_inst" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[37:6]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[69:38] rob_pc" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[69:38]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[101:70] rob_rd" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[101:70]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[102] rob_branch" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[102]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[103] rob_valid" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[103]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[104] rob_dest" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[104]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[267:105]rob_info" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[267:105]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[273:268] rob1_rat" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[273:268]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[305:274] rob1_inst" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[305:274]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[337:306] rob1_pc" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[337:306]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[369:338] rob1_rd" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[369:338]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[370] rob1_branch" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[370]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[371] rob1_valid" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[371]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[372] rob1_dest" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[372]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/rob_wdata_o[535:373] rob1_info" "/tb_top/u_riscv_core/u_rename/rob_wdata_o[535:373]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[31:0] inst" "/tb_top/u_riscv_core/u_rename/re2is_data_o[31:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[63:32] pc" "/tb_top/u_riscv_core/u_rename/re2is_data_o[63:32]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[69:64] rob_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[69:64]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[75:70] ra_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[75:70]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[81:76] rb_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[81:76]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[119:88] ra_value" "/tb_top/u_riscv_core/u_rename/re2is_data_o[119:88]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[151:120] rb_value" "/tb_top/u_riscv_core/u_rename/re2is_data_o[151:120]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[32:0]rob_0" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[32:0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[65:33] rob_1" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[65:33]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[98:66] rob_2" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[98:66]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[131:99] rob_3" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[131:99]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[164:132] rob_4" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[164:132]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[197:165] rob_5" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[197:165]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[230:198] rob_6" "/tb_top/u_riscv_core/u_issue/payloadRAM_sim[230:198]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[160] cpl" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[160]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[0] branch_request" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[1] branch_is_taken" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[1]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[2] branch_is_not_taken" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[2]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[34:3] branch_source" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[34:3]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[66:35] branch_pc" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[66:35]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[67] branch_is_call" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[67]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[68] branch_is_ret" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[68]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[69] branch_is_jmp" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[69]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[70] branch_d_request" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[70]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[102:71] branch_d_pc" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[102:71]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[104:103] branch_d_priv" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[104:103]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe0/writeback_info_o[120] isexe" "/tb_top/u_riscv_core/u_exe0/writeback_info_o[120]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/cpl" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[160]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_request" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[0]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_is_taken" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[1]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_is_not_taken" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[2]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_source" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_source[34:3]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_pc" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_pc[66:35]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_is_call" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[67]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_is_ret" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[68]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_is_jmp" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[69]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_d_request" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[70]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_d_pc" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_d_pc[102:71]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/branch_d_priv" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[161:0] branch_d_priv[104:103]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_exe1/isexe" "/tb_top/u_riscv_core/u_exe1/writeback_info_o[120]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[172]rb_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[172]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[171] rb_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[171]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[170] ra_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[170]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[169] ra_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[169]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[168]npc" "/tb_top/u_riscv_core/u_rename/re2is_data_o[168]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[167] rs2v" "/tb_top/u_riscv_core/u_rename/re2is_data_o[167]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[166] rs1v" "/tb_top/u_riscv_core/u_rename/re2is_data_o[166]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[165] rdv" "/tb_top/u_riscv_core/u_rename/re2is_data_o[165]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[164] csr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[164]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[163] div" "/tb_top/u_riscv_core/u_rename/re2is_data_o[163]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[162] mul" "/tb_top/u_riscv_core/u_rename/re2is_data_o[162]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[161]branch" "/tb_top/u_riscv_core/u_rename/re2is_data_o[161]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[160]lsu" "/tb_top/u_riscv_core/u_rename/re2is_data_o[160]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[159]atomic" "/tb_top/u_riscv_core/u_rename/re2is_data_o[159]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[158]exe" "/tb_top/u_riscv_core/u_rename/re2is_data_o[158]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[157]invalid" "/tb_top/u_riscv_core/u_rename/re2is_data_o[157]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[156]page fault" "/tb_top/u_riscv_core/u_rename/re2is_data_o[156]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[155]fetch fault" "/tb_top/u_riscv_core/u_rename/re2is_data_o[155]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[154]rd_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[154]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[153]rb_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[153]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[152]ra_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[152]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[173]useless" "/tb_top/u_riscv_core/u_rename/re2is_data_o[173]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[326]ra_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[326]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[327]rb_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[327]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[328]rd_vld" "/tb_top/u_riscv_core/u_rename/re2is_data_o[328]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[329]fetch fault" "/tb_top/u_riscv_core/u_rename/re2is_data_o[329]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[330]page fault" "/tb_top/u_riscv_core/u_rename/re2is_data_o[330]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[331]invalid" "/tb_top/u_riscv_core/u_rename/re2is_data_o[331]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[332]exe" "/tb_top/u_riscv_core/u_rename/re2is_data_o[332]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[333]atomic" "/tb_top/u_riscv_core/u_rename/re2is_data_o[333]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[334]lsu" "/tb_top/u_riscv_core/u_rename/re2is_data_o[334]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[335]branch" "/tb_top/u_riscv_core/u_rename/re2is_data_o[335]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[336]mul" "/tb_top/u_riscv_core/u_rename/re2is_data_o[336]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[337]div" "/tb_top/u_riscv_core/u_rename/re2is_data_o[337]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[338]csr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[338]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[339]rdv" "/tb_top/u_riscv_core/u_rename/re2is_data_o[339]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[340]rs1v" "/tb_top/u_riscv_core/u_rename/re2is_data_o[340]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[341]rs2v" "/tb_top/u_riscv_core/u_rename/re2is_data_o[341]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[342]npc" "/tb_top/u_riscv_core/u_rename/re2is_data_o[342]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[343]ra_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[343]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[344]rb_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[344]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[344]ra_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[344]rb_bypass" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[345]rb_pass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[345]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[346]rb_bypass" "/tb_top/u_riscv_core/u_rename/re2is_data_o[346]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[325:294]rb_value" "/tb_top/u_riscv_core/u_rename/re2is_data_o[325:294]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[293:262]ra_value" "/tb_top/u_riscv_core/u_rename/re2is_data_o[293:262]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[255:250]rb_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[255:250]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[249:244]ra_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[249:244]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[243:238]rob_ptr" "/tb_top/u_riscv_core/u_rename/re2is_data_o[243:238]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[237:206]pc" "/tb_top/u_riscv_core/u_rename/re2is_data_o[237:206]" keep
+
+; rename signal list
+; addRenameSig new_name org_name
+
+addRenameSig "/tb_top/u_riscv_core/u_rename/re2is_data_o[205:174]inst" "/tb_top/u_riscv_core/u_rename/re2is_data_o[205:174]" keep
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/inter.fsdb"
+addSignal -h 15 /tb_top/u_riscv_core/clk
+addSignal -h 15 -holdScope rst_n_i
+addSignal -h 15 -holdScope axi_clk
+addSignal -h 15 -holdScope axi_rst_n
+addSignal -h 15 -holdScope jtag_halt_req_i
+addSignal -h 15 -holdScope jtag_reset_req_i
+addSignal -h 15 -holdScope jtag_reg_rdata_o[31:0]
+addSignal -h 15 -holdScope jtag_reg_addr_i[4:0]
+addSignal -h 15 -holdScope jtag_reg_data_i[31:0]
+addSignal -h 15 -holdScope jtag_reg_we_i
+addSignal -h 15 -holdScope intr_i[31:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope rst_n_i
+addSignal -h 15 -holdScope axi_clk
+addSignal -h 15 -holdScope axi_rst_n
+addSignal -h 15 -holdScope jtag_halt_req_i
+addSignal -h 15 -holdScope jtag_reset_req_i
+addSignal -h 15 -holdScope jtag_reg_rdata_o[31:0]
+addSignal -h 15 -holdScope jtag_reg_addr_i[4:0]
+addSignal -h 15 -holdScope jtag_reg_data_i[31:0]
+addSignal -h 15 -holdScope jtag_reg_we_i
+addSignal -h 15 -holdScope intr_i[31:0]
+addGroup "imem axi bus"
+addSignal -h 15 /tb_top/u_riscv_core/imem_axi_m_awid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_awvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_awaddr[31:0]
+addSignal -h 15 -holdScope imem_axi_m_awlen[7:0]
+addSignal -h 15 -holdScope imem_axi_m_awsize[2:0]
+addSignal -h 15 -holdScope imem_axi_m_awburst[1:0]
+addSignal -h 15 -holdScope imem_axi_m_awready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_wvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wdata[31:0]
+addSignal -h 15 -holdScope imem_axi_m_wstrb[3:0]
+addSignal -h 15 -holdScope imem_axi_m_wlast[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_bid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_bresp[1:0]
+addSignal -h 15 -holdScope imem_axi_m_bvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_bready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_arvalid
+addSignal -h 15 -holdScope imem_axi_m_arid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_araddr[31:0]
+addSignal -h 15 -holdScope imem_axi_m_arburst[1:0]
+addSignal -h 15 -holdScope imem_axi_m_arsize[2:0]
+addSignal -h 15 -holdScope imem_axi_m_arlen[7:0]
+addSignal -h 15 -holdScope imem_axi_m_arready
+addSignal -h 15 -holdScope imem_axi_m_rid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_rdata[31:0]
+addSignal -h 15 -holdScope imem_axi_m_rresp[1:0]
+addSignal -h 15 -holdScope imem_axi_m_rlast
+addSignal -h 15 -holdScope imem_axi_m_rvalid
+addSignal -h 15 -holdScope imem_axi_m_rready
+addSignal -h 15 -holdScope imem_axi_m_awid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_awvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_awaddr[31:0]
+addSignal -h 15 -holdScope imem_axi_m_awlen[7:0]
+addSignal -h 15 -holdScope imem_axi_m_awsize[2:0]
+addSignal -h 15 -holdScope imem_axi_m_awburst[1:0]
+addSignal -h 15 -holdScope imem_axi_m_awready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_wvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wdata[31:0]
+addSignal -h 15 -holdScope imem_axi_m_wstrb[3:0]
+addSignal -h 15 -holdScope imem_axi_m_wlast[0:0]
+addSignal -h 15 -holdScope imem_axi_m_wready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_bid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_bresp[1:0]
+addSignal -h 15 -holdScope imem_axi_m_bvalid[0:0]
+addSignal -h 15 -holdScope imem_axi_m_bready[0:0]
+addSignal -h 15 -holdScope imem_axi_m_arvalid
+addSignal -h 15 -holdScope imem_axi_m_arid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_araddr[31:0]
+addSignal -h 15 -holdScope imem_axi_m_arburst[1:0]
+addSignal -h 15 -holdScope imem_axi_m_arsize[2:0]
+addSignal -h 15 -holdScope imem_axi_m_arlen[7:0]
+addSignal -h 15 -holdScope imem_axi_m_arready
+addSignal -h 15 -holdScope imem_axi_m_rid[3:0]
+addSignal -h 15 -holdScope imem_axi_m_rdata[31:0]
+addSignal -h 15 -holdScope imem_axi_m_rresp[1:0]
+addSignal -h 15 -holdScope imem_axi_m_rlast
+addSignal -h 15 -holdScope imem_axi_m_rvalid
+addSignal -h 15 -holdScope imem_axi_m_rready
+addGroup "dmem axi bus"
+addSignal -h 15 /tb_top/u_riscv_core/dmem_axi_m_awid[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_awvalid[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_awaddr[31:0]
+addSignal -h 15 -holdScope dmem_axi_m_awlen[7:0]
+addSignal -h 15 -holdScope dmem_axi_m_awsize[2:0]
+addSignal -h 15 -holdScope dmem_axi_m_awburst[1:0]
+addSignal -h 15 -holdScope dmem_axi_m_awready[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_awlock[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_wid[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_wvalid[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_wdata[31:0]
+addSignal -h 15 -holdScope dmem_axi_m_wstrb[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_wlast[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_wready[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_bid[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_bresp[1:0]
+addSignal -h 15 -holdScope dmem_axi_m_bvalid[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_bready[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_arvalid
+addSignal -h 15 -holdScope dmem_axi_m_arid[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_araddr[31:0]
+addSignal -h 15 -holdScope dmem_axi_m_arburst[1:0]
+addSignal -h 15 -holdScope dmem_axi_m_arsize[2:0]
+addSignal -h 15 -holdScope dmem_axi_m_arlen[7:0]
+addSignal -h 15 -holdScope dmem_axi_m_arready
+addSignal -h 15 -holdScope dmem_axi_m_arlock[0:0]
+addSignal -h 15 -holdScope dmem_axi_m_rid[3:0]
+addSignal -h 15 -holdScope dmem_axi_m_rdata[31:0]
+addSignal -h 15 -holdScope dmem_axi_m_rresp[1:0]
+addSignal -h 15 -holdScope dmem_axi_m_rlast
+addSignal -h 15 -holdScope dmem_axi_m_rvalid
+addSignal -h 15 -holdScope dmem_axi_m_rready
+addGroup "fetch"
+addSignal -h 15 /tb_top/u_riscv_core/u_fetch/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope icache_accept_i
+addSignal -h 15 -holdScope icache_valid_i
+addSignal -h 15 -holdScope icache_error_i
+addSignal -h 15 -holdScope icache_inst_i[63:0]
+addSignal -h 15 -holdScope icache_page_fault_i
+addSignal -h 15 -holdScope fetch_invalidate_i
+addSignal -h 15 -holdScope branch_d_request_i
+addSignal -h 15 -holdScope branch_d_pc_i[31:0]
+addSignal -h 15 -holdScope branch_d_priv_i[1:0]
+addSignal -h 15 -holdScope branch_is_request_i
+addSignal -h 15 -holdScope branch_is_taken_i
+addSignal -h 15 -holdScope branch_is_not_taken_i
+addSignal -h 15 -holdScope branch_source_i[31:0]
+addSignal -h 15 -holdScope branch_pc_i[31:0]
+addSignal -h 15 -holdScope branch_is_call_i
+addSignal -h 15 -holdScope branch_is_ret_i
+addSignal -h 15 -holdScope branch_is_jmp_i
+addSignal -h 15 -holdScope decoder2fetch_accept_i
+addSignal -h 15 -holdScope branch_d_request_i
+addSignal -h 15 -holdScope icache_valid_i
+addSignal -h 15 -holdScope icache_inst_i[63:0]
+addSignal -h 15 -holdScope fetch_valid_o
+addSignal -h 15 -holdScope icache_valid_i
+addSignal -h 15 -holdScope skid_valid_q
+addSignal -h 15 -holdScope fetch_resp_drop_w
+addSignal -h 15 -holdScope fetch_invalid_branch
+addSignal -h 15 -holdScope skid_valid_q
+addSignal -h 15 -holdScope skid_buffer_q[99:0]
+addSignal -h 15 -holdScope decoder2fetch_accept_i
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/u_fifo/valid_o
+addSignal -h 15 -holdScope accept_o
+addSignal -h 15 -holdScope count_q[4:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_fetch/icache_busy_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope active_q
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch_pc_w[31:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch_q
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch_pc_q[31:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope pc_f_q[31:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope stall_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope icache_fetch_q
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope icache_valid_i
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope icache_rd_o
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope icache_pc_o[31:0]
+addSignal -h 15 -holdScope icache_accept_i
+addSignal -h 15 -holdScope pc_f_q[31:0]
+addSignal -h 15 -holdScope branch_pc_w[31:0]
+addSignal -h 15 -holdScope icache_pc_w[31:0]
+addSignal -h 15 -holdScope stall_q
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_valid_o
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_instr_o[63:32]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_instr_o[31:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_pred_branch_o[1:0]
+addSignal -h 15 -holdScope fe2de_useless_o[0]
+addSignal -h 15 -holdScope fe2de_useless_o[1]
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_fetch/u_predictor/npc_next_pc_f_o[31:0]
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 -holdScope npc_next_taken_f_o[1:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_fetch/fetch_fault_fetch_o
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_fault_page_o
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope fetch_pc_o[31:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope icache_rd_o
+addSignal -h 15 -holdScope icache_invalidate_o
+addSignal -h 15 -holdScope icache_pc_o[31:0]
+addSignal -h 15 -holdScope icache_priv_o[1:0]
+addSignal -h 15 -holdScope stall_i
+addSignal -h 15 -holdScope pc_d_q[31:0]
+addSignal -h 15 -holdScope icache_pc_w[31:0]
+addSignal -h 15 -holdScope pc_f_q[31:0]
+addSignal -h 15 -holdScope stall_w
+addSignal -h 15 -holdScope npc_next_pc_f_o[31:0]
+addSignal -h 15 -holdScope npc_next_taken_f_o[1:0]
+addSignal -h 15 -holdScope npc_pc_f_i[31:0]
+addSignal -h 15 -holdScope npc_pc_accept_i
+addSignal -h 15 /tb_top/u_riscv_core/u_mmu/fetch_out_inst_i[63:0]
+addSignal -h 15 /tb_top/imem_axi_m_rdata[31:0]
+addSignal -h 15 /tb_top/u_riscv_core/icache2mmu_inst[63:0]
+addSignal -h 15 -holdScope icache2mmu_accept
+addSignal -h 15 -holdScope icache2mmu_valid
+addSignal -h 15 -holdScope icache2mmu_error
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/clk_i
+addSignal -h 15 /tb_top/u_riscv_core/u_fetch/icache_busy_w
+addSignal -h 15 -holdScope icache_fetch_q
+addSignal -h 15 -holdScope icache_valid_i
+addSignal -h 15 -holdScope icache_pc_o[31:0]
+addGroup "decoder" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/fetch_in_valid_w
+addSignal -h 15 -holdScope fetch_in_data[97:0]
+addSignal -h 15 -holdScope de2re_accept_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope de2re_instr_o[97:0]
+addSignal -h 15 -holdScope re2de_req_i
+addSignal -h 15 -holdScope de2fe_accept_o
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/u_fifo/flush_i
+addSignal -h 15 -holdScope count_q[4:0]
+addSignal -h 15 -holdScope wr_ptr_q[3:0]
+addSignal -h 15 -holdScope rd_ptr_q[3:0]
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/enable_muldiv_w
+addSignal -h 15 -holdScope enable_atomic_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope decoder_fetch_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rs2_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rs1_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rd_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_csr_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_div_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_mul_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_branch_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_lsu_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_atomic_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_exe_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_invalid_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_page_fault_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_fault_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope decoder_fetch_0
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rs2
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rs1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rd
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope div
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope mul
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope lsu
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope atomic
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope exe
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope invalid
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_page_fault
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_fault
+addSignal -h 15 -holdScope fetch_in_valid_w
+addSignal -h 15 -holdScope fetch_in_data[97:0]
+addSignal -h 15 -holdScope fetch_in_info[31:0]
+addSignal -h 15 -holdScope de2fe_accept_o
+addSignal -h 15 -holdScope de2re_accept_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope de2re_instr_o[97:0]
+addSignal -h 15 -holdScope de2re_info_o[31:0]
+addSignal -h 15 -holdScope re2de_req_i
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 -holdScope enable_muldiv_w
+addSignal -h 15 -holdScope enable_atomic_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope decoder_fetch_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rs2_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rs1_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_rd_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_csr_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_div_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_mul_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_branch_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_lsu_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_atomic_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_exe_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_invalid_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_page_fault_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_fault_1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope decoder_fetch_0
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rs2
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rs1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rd
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope div
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope mul
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope branch
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope lsu
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope atomic
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope exe
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope invalid
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_page_fault
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope fetch_fault
+addSignal -h 15 -holdScope fetch_in_valid_w
+addSignal -h 15 -holdScope fetch_in_data[97:0]
+addSignal -h 15 -holdScope fetch_in_info[31:0]
+addSignal -h 15 -holdScope de2fe_accept_o
+addSignal -h 15 -holdScope de2re_accept_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope de2re_instr_o[97:0]
+addSignal -h 15 -holdScope de2re_info_o[31:0]
+addSignal -h 15 -holdScope re2de_req_i
+addSignal -h 15 -holdScope clk_i
+addGroup "rename"
+addSignal -h 15 /tb_top/u_riscv_core/u_rename/rob_accept_i
+addSignal -h 15 -holdScope de2re_accept_i
+addSignal -h 15 -holdScope is2re_accept_i
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/u_fifo/count_q[4:0]
+addSignal -h 15 -holdScope rd_ptr_q[3:0]
+addSignal -h 15 -holdScope wr_ptr_q[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_top/u_riscv_core/u_decoder/de2re_instr_o[63:32]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[51:47]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[46:42]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope de2re_instr_o[31:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[19:15]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[24:20]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_riscv_core/u_rename/de2re_instr_i[63:0]
+addSubGroup "rename-rob write" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_rename/rob_wptr_i[5:0]
+addSignal -h 15 -holdScope all_condition_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[535:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wr_o
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[5:0]rob_rat
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[37:6] rob_inst
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[69:38] rob_pc
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[101:70] rob_rd
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[102] rob_branch
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[103] rob_valid
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[104] rob_dest
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[267:105]rob_info
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[273:268] rob1_rat
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[305:274] rob1_inst
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[337:306] rob1_pc
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[369:338] rob1_rd
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[370] rob1_branch
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[371] rob1_valid
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_wdata_o[372] rob1_dest
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope rob_wdata_o[535:373] rob1_info
+endSubGroup "rename-rob write"
+addSubGroup "rename-issue-data-1"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_riscv_core/u_rename/re2is_data_o[347:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[205:174]inst
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[237:206]pc
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[243:238]rob_ptr
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[249:244]ra_ptr
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[255:250]rb_ptr
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[293:262]ra_value
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[325:294]rb_value
+addSignal -h 15 -holdScope re2is_data_o[346]rb_bypass
+addSignal -h 15 -holdScope re2is_data_o[345]rb_pass
+addSignal -h 15 -holdScope re2is_data_o[344]ra_bypass
+addSignal -h 15 -holdScope re2is_data_o[343]ra_bypass
+addSignal -h 15 -holdScope re2is_data_o[342]npc
+addSignal -h 15 -holdScope re2is_data_o[341]rs2v
+addSignal -h 15 -holdScope re2is_data_o[340]rs1v
+addSignal -h 15 -holdScope re2is_data_o[339]rdv
+addSignal -h 15 -holdScope re2is_data_o[338]csr
+addSignal -h 15 -holdScope re2is_data_o[337]div
+addSignal -h 15 -holdScope re2is_data_o[336]mul
+addSignal -h 15 -holdScope re2is_data_o[335]branch
+addSignal -h 15 -holdScope re2is_data_o[334]lsu
+addSignal -h 15 -holdScope re2is_data_o[333]atomic
+addSignal -h 15 -holdScope re2is_data_o[332]exe
+addSignal -h 15 -holdScope re2is_data_o[331]invalid
+addSignal -h 15 -holdScope re2is_data_o[330]page fault
+addSignal -h 15 -holdScope re2is_data_o[329]fetch fault
+addSignal -h 15 -holdScope re2is_data_o[328]rd_vld
+addSignal -h 15 -holdScope re2is_data_o[327]rb_vld
+addSignal -h 15 -holdScope re2is_data_o[326]ra_vld
+endSubGroup "rename-issue-data-1"
+addSubGroup "rename-issue-data-0"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_riscv_core/u_rename/re2is_data_o[31:0] inst
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[63:32] pc
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[69:64] rob_ptr
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[75:70] ra_ptr
+addSignal -h 15 -UNSIGNED -UDEC -holdScope re2is_data_o[81:76] rb_ptr
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[119:88] ra_value
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_o[151:120] rb_value
+addSignal -h 15 -holdScope re2is_data_o[173]useless
+addSignal -h 15 -holdScope re2is_data_o[172]rb_bypass
+addSignal -h 15 -holdScope re2is_data_o[171] rb_bypass
+addSignal -h 15 -holdScope re2is_data_o[170] ra_bypass
+addSignal -h 15 -holdScope re2is_data_o[169] ra_bypass
+addSignal -h 15 -holdScope re2is_data_o[168]npc
+addSignal -h 15 -holdScope re2is_data_o[167] rs2v
+addSignal -h 15 -holdScope re2is_data_o[166] rs1v
+addSignal -h 15 -holdScope re2is_data_o[165] rdv
+addSignal -h 15 -holdScope re2is_data_o[164] csr
+addSignal -h 15 -holdScope re2is_data_o[163] div
+addSignal -h 15 -holdScope re2is_data_o[162] mul
+addSignal -h 15 -holdScope re2is_data_o[161]branch
+addSignal -h 15 -holdScope re2is_data_o[160]lsu
+addSignal -h 15 -holdScope re2is_data_o[159]atomic
+addSignal -h 15 -holdScope re2is_data_o[158]exe
+addSignal -h 15 -holdScope re2is_data_o[157]invalid
+addSignal -h 15 -holdScope re2is_data_o[156]page fault
+addSignal -h 15 -holdScope re2is_data_o[155]fetch fault
+addSignal -h 15 -holdScope re2is_data_o[154]rd_vld
+addSignal -h 15 -holdScope re2is_data_o[153]rb_vld
+addSignal -h 15 -holdScope re2is_data_o[152]ra_vld
+endSubGroup "rename-issue-data-0"
+addSignal -h 15 /tb_top/u_riscv_core/u_rename/rob_accept_i
+addSignal -h 15 -holdScope de2re_accept_i
+addSignal -h 15 -holdScope is2re_accept_i
+addSignal -h 15 /tb_top/u_riscv_core/u_decoder/u_fifo/count_q[4:0]
+addSignal -h 15 -holdScope rd_ptr_q[3:0]
+addSignal -h 15 -holdScope wr_ptr_q[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_top/u_riscv_core/u_decoder/de2re_instr_o[63:32]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[51:47]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[46:42]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope de2re_instr_o[31:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[19:15]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope de2re_instr_o[24:20]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC /tb_top/u_riscv_core/u_rename/regf_ra_o[9:5]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope regf_rb_o[9:5]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope regf_ra_o[4:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope regf_rb_o[4:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_value_i[6:1]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope rat_value_i[0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_vblue_i[6:1]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope rat_vblue_i[0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_value_i[13:8]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope rat_value_i[7]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_vblue_i[13:8]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope rat_vblue_i[7]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_raptr_o[4:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_rbptr_o[4:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_raptr_o[9:5]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_rbptr_o[9:5]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope newest_rob_wptr_w[5:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rat_wr_o[1:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_wradr_o[9:5]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_wdata_o[13:8]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rat_wradr_o[4:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rat_wdata_o[6:1]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rat_wr_w[1:0]
+addSignal -h 15 -holdScope all_condition_valid
+addSignal -h 15 -holdScope regf_ra_i[63:0]
+addSignal -h 15 -holdScope regf_rb_i[63:0]
+addGroup "issue"
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/is2re_accept_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope re2is_data_i[345:0]
+addSignal -h 15 -holdScope re2is_req_i
+addSubGroup "issue-bypass"
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_issue/mul_bypass_wr_i
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope mul_bypass_wrd_i[5:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope mul_bypass_wdata_i[31:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope div_bypass_wr_i
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope div_bypass_wrd_i[5:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope div_bypass_wdata_i[31:0]
+addSignal -c ID_GREEN5 -ls solid -lw 1 -h 15 -holdScope lsu_bypass_wr_i
+addSignal -c ID_GREEN5 -ls solid -lw 1 -h 15 -holdScope lsu_bypass_wrd_i[5:0]
+addSignal -c ID_GREEN5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope lsu_bypass_wdata_i[31:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope csr_bypass_wr_i
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope csr_bypass_wrd_i[5:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope csr_bypass_wdata_i[31:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope exe_bypass_wr_w[0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope exe_bypass_wrd_w[5:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -1COMP -UDEC -holdScope exe_bypass_wdata_w[31:0]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -holdScope exe_bypass_wr_w[1]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope exe_bypass_wrd_w[11:6]
+addSignal -c ID_ORANGE4 -ls solid -lw 1 -h 15 -1COMP -UDEC -holdScope exe_bypass_wdata_w[63:32]
+endSubGroup "issue-bypass"
+addSubGroup "issue-op"
+addSubGroup "issue-exe0_op"
+addSignal -h 15 /tb_top/u_riscv_core/u_exe0/opcode_valid_i
+addSignal -h 15 -holdScope opcode_opcode_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_pc_i[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rob_ptr_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rd_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_ra_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rb_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_ra_operand_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_rb_operand_i[31:0]
+endSubGroup "issue-exe0_op"
+addSubGroup "issue-exe1_op"
+addSignal -h 15 /tb_top/u_riscv_core/u_exe1/opcode_valid_i
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_opcode_i[31:0]
+addSignal -h 15 -holdScope opcode_pc_i[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rob_ptr_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rd_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_ra_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope opcode_rb_idx_i[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_ra_operand_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opcode_rb_operand_i[31:0]
+endSubGroup "issue-exe1_op"
+addSubGroup "issue-mul_op"
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/mul_opcode_valid_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_opcode_o[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_pc_o[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_rob_ptr_o[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_rd_idx_o[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_ra_idx_o[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_rb_idx_o[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_ra_operand_o[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mul_opcode_rb_operand_o[31:0]
+addSignal -h 15 /tb_top/u_riscv_core/u_multiplier/writeback_valid_o
+addSignal -h 15 -holdScope writeback_value_o[31:0]
+addSignal -h 15 -holdScope writeback_rob_ptr_o[5:0]
+addSignal -h 15 -holdScope result_r[31:0]
+addSignal -h 15 -holdScope vld_dly[1]
+addSignal -h 15 -holdScope vld_dly[0]
+endSubGroup "issue-mul_op"
+addSubGroup "issue-div_op"
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/csr_pending_w
+addSignal -h 15 -holdScope div_pending_w
+addSignal -h 15 -holdScope mul_pending_w
+addSignal -h 15 -holdScope div_opcode_valid_o
+addSignal -h 15 -holdScope div_opcode_opcode_o[31:0]
+addSignal -h 15 -holdScope div_opcode_pc_o[31:0]
+addSignal -h 15 -holdScope div_opcode_rob_ptr_o[5:0]
+addSignal -h 15 -holdScope div_opcode_rd_idx_o[5:0]
+addSignal -h 15 -holdScope div_opcode_ra_idx_o[5:0]
+addSignal -h 15 -holdScope div_opcode_rb_idx_o[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope div_opcode_ra_operand_o[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope div_opcode_rb_operand_o[31:0]
+endSubGroup "issue-div_op"
+addSubGroup "issue-lsu_op"
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/lsu_opcode_valid_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope lsu_opcode_opcode_o[31:0]
+addSignal -h 15 -holdScope lsu_opcode_pc_o[31:0]
+addSignal -h 15 -holdScope lsu_opcode_rob_ptr_o[5:0]
+addSignal -h 15 -holdScope lsu_opcode_rd_idx_o[5:0]
+addSignal -h 15 -holdScope lsu_opcode_ra_idx_o[5:0]
+addSignal -h 15 -holdScope lsu_opcode_rb_idx_o[5:0]
+addSignal -h 15 -holdScope lsu_opcode_ra_operand_o[31:0]
+addSignal -h 15 -holdScope lsu_opcode_rb_operand_o[31:0]
+addSignal -h 15 -holdScope lsu_opcode_accept_i
+endSubGroup "issue-lsu_op"
+addSubGroup "issue-csr_op" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/csr_opcode_valid_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope csr_opcode_opcode_o[31:0]
+addSignal -h 15 -holdScope csr_opcode_pc_o[31:0]
+addSignal -h 15 -holdScope csr_opcode_rob_ptr_o[5:0]
+addSignal -h 15 -holdScope csr_opcode_rd_idx_o[5:0]
+addSignal -h 15 -holdScope csr_opcode_ra_idx_o[5:0]
+addSignal -h 15 -holdScope csr_opcode_rb_idx_o[5:0]
+addSignal -h 15 -holdScope csr_opcode_ra_operand_o[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope csr_opcode_rb_operand_o[31:0]
+endSubGroup "issue-csr_op"
+endSubGroup "issue-op"
+addGroup "csr_signal" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_csr/ecall_w
+addSignal -h 15 -holdScope ebreak_w
+addSignal -h 15 -holdScope eret_w
+addSignal -h 15 -holdScope eret_priv_w[1:0]
+addSignal -h 15 -holdScope csrrw_w
+addSignal -h 15 -holdScope csrrs_w
+addSignal -h 15 -holdScope csrrc_w
+addSignal -h 15 -holdScope csrrwi_w
+addSignal -h 15 -holdScope csrrsi_w
+addSignal -h 15 -holdScope csrrci_w
+addSignal -h 15 -holdScope wfi_w
+addSignal -h 15 -holdScope fence_w
+addSignal -h 15 -holdScope sfence_w
+addSignal -h 15 -holdScope ifence_w
+addSignal -h 15 -holdScope ifence_o
+addSignal -h 15 -holdScope exception_e1_q[5:0]
+addSignal -h 15 -holdScope set_r
+addSignal -h 15 -holdScope clr_r
+addGroup "lsu_signal" -e FALSE
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_lsu/state[2:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope st[2:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope cache_busy
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 -holdScope delay_lsu_w
+addSignal -h 15 -holdScope pending_lsu_w
+addSignal -h 15 -holdScope issue_lsu_w
+addSignal -h 15 /tb_top/u_riscv_core/u_lsu/u_lsu_request/valid_o
+addSignal -h 15 /tb_top/u_riscv_core/u_lsu/opcode_valid_w
+addSignal -h 15 -holdScope opcode_rb_operand_w[31:0]
+addSignal -h 15 -holdScope opcode_ra_operand_w[31:0]
+addSignal -h 15 -holdScope opcode_rb_idx_w[5:0]
+addSignal -h 15 -holdScope opcode_ra_idx_w[5:0]
+addSignal -h 15 -holdScope opcode_rd_idx_w[5:0]
+addSignal -h 15 -holdScope opcode_rob_ptr_w[5:0]
+addSignal -h 15 -holdScope opcode_pc_w[31:0]
+addSignal -h 15 -holdScope opcode_opcode_w[31:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_lsu/u_lsu_request/pop_i
+addSubGroup "lsu_signal-op inst" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_lsu/complete_ok_w
+addSignal -h 15 -holdScope complete_err_w
+addSignal -h 15 -holdScope mem_accept_i
+addSignal -h 15 -holdScope mem_rd_o
+addSignal -h 15 -holdScope wb_result_r[31:0]
+addSignal -expanded -h 15 -holdScope mem_wr_o[3:0]
+addSignal -h 15 -holdScope mem_wr_o[3]
+addSignal -h 15 -holdScope mem_wr_o[2]
+addSignal -h 15 -holdScope mem_wr_o[1]
+addSignal -h 15 -holdScope mem_wr_o[0]
+addSignal -h 15 -holdScope mem_data_wr_o[31:0]
+addSignal -h 15 -holdScope mem_addr_o[31:0]
+addSignal -h 15 -holdScope mem_unaligned_q
+addSignal -h 15 -holdScope mem_rd_q
+addSignal -h 15 -holdScope mem_cacheable_q
+addSignal -h 15 -holdScope mem_addr_r[31:0]
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope opcode_vld_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope load_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope load_signed_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope store_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope amo_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope lr_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope sc_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope atomic_inst_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_lb_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_lh_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_lw_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_sb_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_sh_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_sw_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_sw_lw_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope req_sh_lh_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope dcache_flush_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope dcache_writeback_w
+addSignal -c ID_RED7 -ls solid -lw 1 -h 15 -holdScope dcache_invalidate_w
+endSubGroup "lsu_signal-op inst"
+addGroup "dcache" -e FALSE
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_dcache/mem_req_tag_i[10:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_addr_i[31:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_data_wr_i[31:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_wr_i[3:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_rd_i
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_cacheable_i
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_invalidate_i
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_writeback_i
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_flush_i
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_ready_o
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_ack_o
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_error_o
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_resp_tag_o[10:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope mem_data_rd_o[31:0]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_arvalid_o
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_arlock_o
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_araddr_o[31:0]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_arid_o[3:0]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_arlen_o[7:0]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_arburst_o[1:0]
+addSignal -c ID_ORANGE7 -ls solid -lw 1 -h 15 -holdScope axi_rready_o
+addSubGroup "dcache-axi" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_dcache/u_axi/inport_atomic_i
+addSignal -h 15 -holdScope inport_len_i[7:0]
+addSignal -h 15 -holdScope inport_rd_i
+addSignal -h 15 -holdScope inport_wr_i[3:0]
+addSignal -h 15 -holdScope inport_write_data_i[31:0]
+addSignal -h 15 -holdScope inport_addr_i[31:0]
+addSignal -h 15 -holdScope req_can_issue_w
+addSignal -h 15 -holdScope req_is_read_w
+addSignal -h 15 -holdScope req_is_write_w
+addSignal -h 15 -holdScope req_len_w[7:0]
+addSignal -h 15 -holdScope req_atomic_w
+addSignal -h 15 /tb_top/u_riscv_core/u_dcache/u_axi/u_axi/outport_araddr_o[31:0]
+addSignal -h 15 -holdScope outport_arvalid_o
+addSignal -h 15 -holdScope outport_arid_o[3:0]
+addSignal -h 15 -holdScope outport_arlen_o[7:0]
+addSignal -h 15 -holdScope outport_arburst_o[1:0]
+addSignal -h 15 -holdScope outport_rready_o
+addSignal -h 15 -holdScope outport_arlock_o
+addSignal -h 15 /tb_top/u_riscv_core/u_dcache/u_axi/outport_arvalid_o
+addSignal -h 15 -holdScope outport_araddr_o[31:0]
+addSignal -h 15 -holdScope outport_arid_o[3:0]
+addSignal -h 15 -holdScope outport_arlen_o[7:0]
+addSignal -h 15 -holdScope outport_arburst_o[1:0]
+addSignal -h 15 -holdScope outport_arlock_o
+endSubGroup "dcache-axi"
+addSubGroup "dcache-cached" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_dcache/mem_cached_addr_w[31:0]
+addSignal -h 15 -holdScope mem_cached_data_wr_w[31:0]
+addSignal -h 15 -holdScope mem_cached_rd_w
+addSignal -h 15 -holdScope mem_cached_wr_w[3:0]
+addSignal -h 15 -holdScope mem_cached_cacheable_w
+addSignal -h 15 -holdScope mem_cached_req_tag_w[10:0]
+addSignal -h 15 -holdScope pmem_select_w
+addSignal -h 15 -holdScope pmem_atomic_w
+addSignal -h 15 -holdScope pmem_wr_w[3:0]
+addSignal -h 15 -holdScope pmem_rd_w
+addSignal -h 15 -holdScope pmem_len_w[7:0]
+addSignal -h 15 -holdScope pmem_addr_w[31:0]
+addSignal -h 15 -holdScope pmem_write_data_w[31:0]
+endSubGroup "dcache-cached"
+addGroup "issue_block_op" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/issue_cnt[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_idx0[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_idx1[3:0]
+addSignal -h 15 -holdScope issue_exe0
+addSignal -h 15 -holdScope issue_exe1
+addSignal -h 15 -holdScope issue_mul
+addSignal -h 15 -holdScope issue_div
+addSignal -h 15 -holdScope issue_lsu
+addSignal -h 15 -holdScope issue_csr
+addSignal -h 15 -holdScope issue_exe0_in0
+addSignal -h 15 -holdScope issue_exe0_in1
+addSignal -h 15 -holdScope issue_exe1_in0
+addSignal -h 15 -holdScope issue_exe1_in1
+addSignal -h 15 -holdScope issue_mul_in0
+addSignal -h 15 -holdScope issue_mul_in1
+addSignal -h 15 -holdScope issue_div_in0
+addSignal -h 15 -holdScope issue_div_in1
+addSignal -h 15 -holdScope issue_lsu_in0
+addSignal -h 15 -holdScope issue_lsu_in1
+addSignal -h 15 -holdScope issue_csr_in0
+addSignal -h 15 -holdScope opcode_opcode_0[31:0]
+addSignal -h 15 -holdScope opcode_pc_0[31:0]
+addSignal -h 15 -holdScope opcode_rob_ptr_0[5:0]
+addSignal -h 15 -holdScope opcode_rd_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_ra_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_rb_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_ra_operand_0[31:0]
+addSignal -h 15 -holdScope opcode_rb_operand_0[31:0]
+addSignal -h 15 -holdScope opcode_invalid_0
+addSignal -h 15 -holdScope opcode_opcode_1[31:0]
+addSignal -h 15 -holdScope opcode_pc_1[31:0]
+addSignal -h 15 -holdScope opcode_rob_ptr_1[5:0]
+addSignal -h 15 -holdScope opcode_rd_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_ra_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_rb_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_ra_operand_1[31:0]
+addSignal -h 15 -holdScope opcode_rb_operand_1[31:0]
+addSignal -h 15 -holdScope opcode_invalid_1
+addSignal -h 15 -holdScope issue_end
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue0_w
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue1_w
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue0_idx_w[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue1_idx_w[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope single_issue_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope dual_issue_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope lsu_already
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope pop_issue0
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope pop_issue1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue0_idx[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue1_idx[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope single_issue
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope dual_issue
+addSignal -h 15 -holdScope push_issue
+addSignal -h 15 -holdScope issue_cnt[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_idx0[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_idx1[3:0]
+addSignal -h 15 -holdScope issue_exe0
+addSignal -h 15 -holdScope issue_exe1
+addSignal -h 15 -holdScope issue_mul
+addSignal -h 15 -holdScope issue_div
+addSignal -h 15 -holdScope issue_lsu
+addSignal -h 15 -holdScope issue_csr
+addSignal -h 15 -holdScope issue_exe0_in0
+addSignal -h 15 -holdScope issue_exe0_in1
+addSignal -h 15 -holdScope issue_exe1_in0
+addSignal -h 15 -holdScope issue_exe1_in1
+addSignal -h 15 -holdScope issue_mul_in0
+addSignal -h 15 -holdScope issue_mul_in1
+addSignal -h 15 -holdScope issue_div_in0
+addSignal -h 15 -holdScope issue_div_in1
+addSignal -h 15 -holdScope issue_lsu_in0
+addSignal -h 15 -holdScope issue_lsu_in1
+addSignal -h 15 -holdScope issue_csr_in0
+addSignal -h 15 -holdScope opcode_opcode_0[31:0]
+addSignal -h 15 -holdScope opcode_pc_0[31:0]
+addSignal -h 15 -holdScope opcode_rob_ptr_0[5:0]
+addSignal -h 15 -holdScope opcode_rd_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_ra_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_rb_idx_0[5:0]
+addSignal -h 15 -holdScope opcode_ra_operand_0[31:0]
+addSignal -h 15 -holdScope opcode_rb_operand_0[31:0]
+addSignal -h 15 -holdScope opcode_invalid_0
+addSignal -h 15 -holdScope opcode_opcode_1[31:0]
+addSignal -h 15 -holdScope opcode_pc_1[31:0]
+addSignal -h 15 -holdScope opcode_rob_ptr_1[5:0]
+addSignal -h 15 -holdScope opcode_rd_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_ra_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_rb_idx_1[5:0]
+addSignal -h 15 -holdScope opcode_ra_operand_1[31:0]
+addSignal -h 15 -holdScope opcode_rb_operand_1[31:0]
+addSignal -h 15 -holdScope opcode_invalid_1
+addSignal -h 15 -holdScope issue_end
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue0_w
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue1_w
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue0_idx_w[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope pop_issue1_idx_w[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope single_issue_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope dual_issue_w
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope lsu_already
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope pop_issue0
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope pop_issue1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue0_idx[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue1_idx[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope single_issue
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope dual_issue
+addSignal -h 15 -holdScope push_issue
+addGroup "issue_signal"
+addSubGroup "issue_payloadRAM" -e FALSE
+addSignal -h 15 -UNSIGNED -UDEC /tb_top/u_riscv_core/u_control/rat_wdata_i[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rat_wdata_i[13:7]
+addSignal -h 15 -holdScope rat_wr_i[0]
+addSignal -h 15 -holdScope rat_wdata_w0[0]
+addSignal -h 15 -holdScope rat_wdata_w1[0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 /tb_top/u_riscv_core/u_issue/payload_retire_i[0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope payload_retire_i[1]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope payload_retire_ptr_i[5:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope payload_retire_ptr_i[11:6]
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[32:0]rob_0
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[65:33] rob_1
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[98:66] rob_2
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[131:99] rob_3
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[164:132] rob_4
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[197:165] rob_5
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[230:198] rob_6
+addSignal -h 15 -holdScope payloadRAM_sim[263:231]
+addSignal -h 15 -holdScope payloadRAM_sim[296:264]
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[2111:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[32:0]rob_0
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[65:33] rob_1
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[98:66] rob_2
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[131:99] rob_3
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[164:132] rob_4
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[197:165] rob_5
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[230:198] rob_6
+addSignal -h 15 -holdScope payloadRAM_sim[263:231]
+addSignal -h 15 -holdScope payloadRAM_sim[296:264]
+addSignal -h 15 -UNSIGNED -HEX -holdScope payloadRAM_sim[2111:0]
+endSubGroup "issue_payloadRAM"
+addSubGroup "issue_queue_index"
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/branch_request_i
+addSignal -h 15 -holdScope single_issue_w
+addSignal -h 15 -holdScope dual_issue_w
+addSignal -h 15 -holdScope issue_cnt[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope iq_real_wptr[3:0]
+addSignal -h 15 -holdScope issue_exe1_in1
+addSignal -h 15 -holdScope clk_i
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope issue_cnt[3:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope issue_in_0
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope issue_idx0[3:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope issue_in_1
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope issue_idx1[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[7:4]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[11:8]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[15:12]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[19:16]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[23:20]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[27:24]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[31:28]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope issue_in_0
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope issue_idx0[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope issue_in_1
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope issue_idx1[3:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope push_issue
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope pop_issue0
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue0_idx[3:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope pop_issue1
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope pop_issue1_idx[3:0]
+addSignal -h 15 -holdScope pop_issue0_idxp1[3:0]
+addSignal -h 15 -holdScope pop_issue0_idxp2[3:0]
+addSignal -h 15 -holdScope pop_issue1_idxp1[3:0]
+addSignal -h 15 -holdScope pop_issue1_idxp2[3:0]
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope iq_wptr[3:0]
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope iq_real_wptr[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope iq_data0_sim[173:0]
+addSignal -h 15 -holdScope iq_data0_sim[63:32]
+addSignal -h 15 -UNSIGNED -HEX -holdScope iq_data0_vld_sim[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope iq_data1_sim[173:0]
+addSignal -h 15 -holdScope iq_data1_sim[63:32]
+addSignal -h 15 -UNSIGNED -HEX -holdScope iq_data1_vld_sim[7:0]
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 -holdScope issue_queue_sim[347:0]
+addSignal -h 15 -holdScope issue_queue_sim[695:348]
+addSignal -h 15 -holdScope issue_queue_sim[1043:696]
+addSignal -h 15 -holdScope issue_queue_sim[1391:1044]
+addSignal -h 15 -holdScope issue_queue_sim[1739:1392]
+addSignal -h 15 -holdScope issue_queue_sim[2087:1740]
+addSignal -h 15 -holdScope issue_queue_sim[2435:2088]
+addSignal -h 15 -holdScope issue_queue_sim[2783:2436]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope issue_queue_vld_sim[1:0]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[3:2]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[5:4]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[7:6]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[9:8]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[11:10]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[13:12]
+addSignal -c ID_YELLOW4 -ls solid -lw 1 -h 15 -holdScope issue_queue_vld_sim[15:14]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[3:0]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[7:4]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[11:8]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[15:12]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[19:16]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[23:20]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[27:24]
+addSignal -h 15 -holdScope issue_cnt_idx_ff_w[31:28]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[7:4]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[11:8]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[15:12]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[19:16]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[23:20]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[27:24]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope issue_cnt_idx_w[31:28]
+endSubGroup "issue_queue_index"
+addGroup "exe0"
+addSignal -h 15 /tb_top/u_riscv_core/u_exe0/branch_taken_q
+addSignal -h 15 -holdScope branch_ntaken_q
+addSignal -h 15 -holdScope writeback_info_o[160] cpl
+addSignal -h 15 -holdScope writeback_info_o[0] branch_request
+addSignal -h 15 -holdScope writeback_info_o[1] branch_is_taken
+addSignal -h 15 -holdScope writeback_info_o[2] branch_is_not_taken
+addSignal -h 15 -UNSIGNED -HEX -holdScope writeback_info_o[34:3] branch_source
+addSignal -h 15 -UNSIGNED -HEX -holdScope writeback_info_o[66:35] branch_pc
+addSignal -h 15 -holdScope writeback_info_o[67] branch_is_call
+addSignal -h 15 -holdScope writeback_info_o[68] branch_is_ret
+addSignal -h 15 -holdScope writeback_info_o[69] branch_is_jmp
+addSignal -h 15 -holdScope writeback_info_o[70] branch_d_request
+addSignal -h 15 -UNSIGNED -HEX -holdScope writeback_info_o[102:71] branch_d_pc
+addSignal -h 15 -UNSIGNED -HEX -holdScope writeback_info_o[104:103] branch_d_priv
+addSignal -h 15 -holdScope writeback_info_o[120] isexe
+addSignal -h 15 -holdScope opcode_valid_i
+addSignal -h 15 -holdScope writeback_value_o[31:0]
+addSignal -h 15 -holdScope writeback_valid_o
+addSignal -h 15 -holdScope writeback_rob_ptr_o[5:0]
+addGroup "exe1" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_exe1/cpl
+addSignal -h 15 -holdScope branch_request
+addSignal -h 15 -holdScope branch_is_taken
+addSignal -h 15 -holdScope branch_is_not_taken
+addSignal -h 15 -UNSIGNED -HEX -holdScope branch_source
+addSignal -h 15 -UNSIGNED -HEX -holdScope branch_pc
+addSignal -h 15 -holdScope branch_is_call
+addSignal -h 15 -holdScope branch_is_ret
+addSignal -h 15 -holdScope branch_is_jmp
+addSignal -h 15 -holdScope branch_d_request
+addSignal -h 15 -UNSIGNED -HEX -holdScope branch_d_pc
+addSignal -h 15 -UNSIGNED -HEX -holdScope branch_d_priv
+addSignal -h 15 -holdScope isexe
+addSignal -h 15 -holdScope opcode_valid_i
+addSignal -h 15 -holdScope writeback_value_o[31:0]
+addSignal -h 15 -holdScope writeback_rob_ptr_o[5:0]
+addSignal -h 15 -holdScope writeback_valid_o
+addGroup "control_predict"
+addSignal -h 15 /tb_top/u_riscv_core/u_control/branch_d_request_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope branch_d_pc_o[31:0]
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/branch_request_i
+addSignal -h 15 /tb_top/u_riscv_core/u_control/branch_csr_request_i
+addSignal -h 15 -holdScope mispredicted_r0
+addSignal -h 15 -holdScope mispredicted_r1
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_write_o
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_exception_o[5:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_waddr_o[11:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_wdata_o[31:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_exception_pc_o[31:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope csr_writeback_exception_addr_o[31:0]
+addSignal -h 15 -holdScope pc_x_q[31:0]
+addSignal -h 15 -holdScope priv_x_q[1:0]
+addSignal -h 15 -holdScope dual_retire_w
+addSignal -h 15 -holdScope single_retire_w
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope branch_d_exec0_request
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope branch_d_exec0_pc[31:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope branch_d_exec1_request
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope branch_d_exec1_pc[31:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope control_branch_request_o
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope branch_csr_request_i
+addSignal -h 15 -holdScope writeback_valid_i[5:0]
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 /tb_top/u_riscv_core/u_issue/payload_retire_i[1]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope payload_retire_ptr_i[11:6]
+addSignal -h 15 -holdScope payload_retire_i[0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope payload_retire_ptr_i[5:0]
+addSignal -h 15 /tb_top/u_riscv_core/u_control/can_retire0
+addSignal -h 15 -holdScope can_retire1
+addSignal -h 15 -holdScope rob1_valid
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rob0_dest
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rob1_dest
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_retire_wr[0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rob_retire_wradr[4:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rob_retire_wrdata[31:0]
+addSignal -h 15 -holdScope rat_wr_i[0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rat_wradr_i[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rat_wdata_i[6:0]
+addSignal -h 15 -holdScope rat_wr_i[1]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rat_wradr_i[9:5]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rat_wdata_i[13:7]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope rob_retire_wr[1]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rob_retire_wradr[9:5]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -holdScope rob_retire_wrdata[63:32]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rob_wptr[5:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rob_cnt[5:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope rob_rptr[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rob_rptr0[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rob_rptr1[5:0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope rob_rd[0]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope rob_rd[1]
+addSignal -c ID_YELLOW5 -ls solid -lw 1 -h 15 -holdScope rob_wr_i
+addSignal -h 15 -holdScope clk_i
+addSubGroup "control_predict-srat" -e FALSE
+addSignal -h 15 /tb_top/u_riscv_core/u_control/srat_flush
+addSignal -h 15 -UNSIGNED -HEX -holdScope srat_w[6:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope srat_w[13:7]
+addSignal -h 15 -holdScope srat_w[20:14]
+addSignal -h 15 -holdScope srat_w[27:21]
+addSignal -h 15 -holdScope srat_w[34:28]
+addSignal -h 15 -holdScope srat_w[41:35]
+addSignal -h 15 -holdScope srat_w[48:42]
+addSignal -h 15 -holdScope srat_w[55:49]
+addSignal -h 15 -holdScope srat_w[62:56]
+addSignal -h 15 -holdScope srat_w[69:63]
+addSignal -h 15 -holdScope srat_w[76:70]
+addSignal -h 15 -holdScope srat_w[83:77]
+addSignal -h 15 -holdScope srat_w[90:84]
+addSignal -h 15 -holdScope srat_w[97:91]
+addSignal -h 15 -holdScope srat_w[104:98]
+addSignal -h 15 -holdScope srat_w[111:105]
+addSignal -h 15 -holdScope srat_w[118:112]
+addSignal -h 15 -holdScope srat_w[125:119]
+addSignal -h 15 -holdScope srat_w[132:126]
+addSignal -h 15 -holdScope srat_w[139:133]
+addSignal -h 15 -holdScope srat_w[146:140]
+addSignal -h 15 -holdScope srat_w[153:147]
+addSignal -h 15 -holdScope srat_w[160:154]
+addSignal -h 15 -holdScope srat_w[167:161]
+addSignal -h 15 -holdScope srat_w[174:168]
+addSignal -h 15 -holdScope srat_w[181:175]
+addSignal -h 15 -holdScope srat_w[188:182]
+addSignal -h 15 -holdScope srat_w[195:189]
+addSignal -h 15 -holdScope srat_w[202:196]
+addSignal -h 15 -holdScope srat_w[209:203]
+addSignal -h 15 -holdScope srat_w[216:210]
+addSignal -h 15 -holdScope srat_w[223:217]
+addSignal -h 15 -holdScope srat_flush
+addSignal -h 15 -UNSIGNED -HEX -holdScope srat_w[6:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope srat_w[13:7]
+addSignal -h 15 -holdScope srat_w[20:14]
+addSignal -h 15 -holdScope srat_w[27:21]
+addSignal -h 15 -holdScope srat_w[34:28]
+addSignal -h 15 -holdScope srat_w[41:35]
+addSignal -h 15 -holdScope srat_w[48:42]
+addSignal -h 15 -holdScope srat_w[55:49]
+addSignal -h 15 -holdScope srat_w[62:56]
+addSignal -h 15 -holdScope srat_w[69:63]
+addSignal -h 15 -holdScope srat_w[76:70]
+addSignal -h 15 -holdScope srat_w[83:77]
+addSignal -h 15 -holdScope srat_w[90:84]
+addSignal -h 15 -holdScope srat_w[97:91]
+addSignal -h 15 -holdScope srat_w[104:98]
+addSignal -h 15 -holdScope srat_w[111:105]
+addSignal -h 15 -holdScope srat_w[118:112]
+addSignal -h 15 -holdScope srat_w[125:119]
+addSignal -h 15 -holdScope srat_w[132:126]
+addSignal -h 15 -holdScope srat_w[139:133]
+addSignal -h 15 -holdScope srat_w[146:140]
+addSignal -h 15 -holdScope srat_w[153:147]
+addSignal -h 15 -holdScope srat_w[160:154]
+addSignal -h 15 -holdScope srat_w[167:161]
+addSignal -h 15 -holdScope srat_w[174:168]
+addSignal -h 15 -holdScope srat_w[181:175]
+addSignal -h 15 -holdScope srat_w[188:182]
+addSignal -h 15 -holdScope srat_w[195:189]
+addSignal -h 15 -holdScope srat_w[202:196]
+addSignal -h 15 -holdScope srat_w[209:203]
+addSignal -h 15 -holdScope srat_w[216:210]
+addSignal -h 15 -holdScope srat_w[223:217]
+endSubGroup "control_predict-srat"
+addGroup "control_info"
+addSignal -h 15 /tb_top/u_riscv_core/u_control/writeback_info_sim[102]
+addSignal -h 15 -UNSIGNED -HEX -holdScope writeback_info_sim[162:0]
+addSignal -h 15 -holdScope rob0_info[162:0]
+addSignal -h 15 -holdScope writeback_valid_i[5:0]
+addSignal -h 15 -holdScope branch_d_exec0_request
+addSignal -h 15 -holdScope rob0_rat[5:0]
+addSignal -h 15 -holdScope rob0_inst[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope rob0_pc[31:0]
+addSignal -h 15 -holdScope rob0_rd_dat[31:0]
+addSignal -h 15 -holdScope rob0_branch
+addSignal -h 15 -holdScope rob0_valid
+addSignal -h 15 -holdScope rob0_dest
+addSignal -h 15 -holdScope rob0_info_isinvalid[0:0]
+addSignal -h 15 -holdScope rob0_info_iscsr[0:0]
+addSignal -h 15 -holdScope rob0_info_islsu[0:0]
+addSignal -h 15 -holdScope rob0_info_isdiv[0:0]
+addSignal -h 15 -holdScope rob0_info_ismul[0:0]
+addSignal -h 15 -holdScope rob0_info_isexe[0:0]
+addSignal -h 15 -holdScope rob0_info_exception[5:0]
+addSignal -h 15 -holdScope rob0_info_csrwbdata[31:0]
+addSignal -h 15 -holdScope rob0_info_cpl[0:0]
+addSignal -h 15 -holdScope rob0_info_exp[0:0]
+addSignal -h 15 -holdScope rob0_info_npc[0:0]
+addSignal -h 15 -holdScope rob1_rat[5:0]
+addSignal -h 15 -holdScope rob1_inst[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope rob1_pc[31:0]
+addSignal -h 15 -holdScope rob1_rd_dat[31:0]
+addSignal -h 15 -holdScope rob1_branch
+addSignal -h 15 -holdScope rob1_valid
+addSignal -h 15 -holdScope rob1_dest
+addSignal -h 15 -holdScope rob1_info_isinvalid[0:0]
+addSignal -h 15 -holdScope rob1_info_iscsr[0:0]
+addSignal -h 15 -holdScope rob1_info_islsu[0:0]
+addSignal -h 15 -holdScope rob1_info_isdiv[0:0]
+addSignal -h 15 -holdScope rob1_info_ismul[0:0]
+addSignal -h 15 -holdScope rob1_info_isexe[0:0]
+addSignal -h 15 -holdScope rob1_info_exception[5:0]
+addSignal -h 15 -holdScope rob1_info_csrwbdata[31:0]
+addSignal -h 15 -holdScope rob1_info_cpl[0:0]
+addSignal -h 15 -holdScope rob1_info_exp[0:0]
+addSignal -h 15 -holdScope rob1_info_npc[0:0]
+addGroup "G15"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
+
+FILTER_SIGNAL_BEGIN
+
+"*"
+
+FILTER_STRING_LIST_BEGIN
+FILTER_STRING_LIST_END
+
+FILTER_TYPE_LIST_BEGIN
+"All"
+"Input"
+"Output"
+"Inout"
+"Net"
+"Register"
+"Buffer"
+"Linkage"
+"ClassTransaction"
+"Property"
+"Others"
+FILTER_TYPE_LIST_END
+
+FILTER_SIGNAL_END

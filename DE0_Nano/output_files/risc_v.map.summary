@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 27 15:00:20 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : risc_v
+Top-level Entity Name : led
+Family : Cyclone IV E
+Total logic elements : 11,535
+    Total combinational functions : 8,316
+    Dedicated logic registers : 4,537
+Total registers : 4537
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 534,144
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 0

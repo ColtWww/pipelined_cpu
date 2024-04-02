@@ -1,0 +1,42 @@
+# vsim -c "+nowarnTSCALE" -L ./work -novopt -l load.log tb 
+# Start time: 22:56:35 on Apr 01,2024
+# Loading work.tb
+# Loading work.top
+# Loading work.uart_debug
+# Loading work.cpu
+# Loading work.dff_rst_0
+# Loading work.dff_rst_def
+# Loading work.ifu
+# Loading work.dff_en_2
+# Loading work.idu
+# Loading work.exu
+# Loading work.mul
+# Loading work.div
+# Loading work.clint
+# Loading work.lsu
+# Loading work.regfile
+# Loading work.csr
+# Loading work.xreg
+# Loading work.rbm
+# Loading work.ram
+# Loading work.uart
+# Loading work.core_data_monitor_tb
+# Loading work.core_uart_monitor_tb
+# hexadecimal
+# test running...
+# ~~~~~~~~~~~~~~~~~~~ TEST_PASS ~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~ #####     ##     ####    #### ~~~~~~~~~
+# ~~~~~~~~~ #    #   #  #   #       #     ~~~~~~~~~
+# ~~~~~~~~~ #    #  #    #   ####    #### ~~~~~~~~~
+# ~~~~~~~~~ #####   ######       #       #~~~~~~~~~
+# ~~~~~~~~~ #       #    #  #    #  #    #~~~~~~~~~
+# ~~~~~~~~~ #       #    #   ####    #### ~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Time Out.
+# ** Note: $finish    : ../tb/core_tb.v(61)
+#    Time: 500 us  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at ../tb/core_tb.v line 61
+# End time: 22:57:22 on Apr 01,2024, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 0

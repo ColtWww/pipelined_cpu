@@ -1,0 +1,33 @@
+
+State Machine - |led|top:u_top|uart:u_uart|state
+Name state.S_STOP state.S_SEND_BYTE state.S_START state.S_IDLE 
+state.S_IDLE 0 0 0 0 
+state.S_START 0 0 1 1 
+state.S_SEND_BYTE 0 1 0 1 
+state.S_STOP 1 0 0 1 
+
+State Machine - |led|top:u_top|cpu:u_cpu|clint:u_clint|csr_state
+Name csr_state.CSR_STATE_MRET csr_state.CSR_STATE_MCAUSE csr_state.CSR_STATE_MSTATUS csr_state.CSR_STATE_MEPC csr_state.CSR_STATE_WAIT csr_state.CSR_STATE_IDLE 
+csr_state.CSR_STATE_IDLE 0 0 0 0 0 0 
+csr_state.CSR_STATE_WAIT 0 0 0 0 1 1 
+csr_state.CSR_STATE_MEPC 0 0 0 1 0 1 
+csr_state.CSR_STATE_MSTATUS 0 0 1 0 0 1 
+csr_state.CSR_STATE_MCAUSE 0 1 0 0 0 1 
+csr_state.CSR_STATE_MRET 1 0 0 0 0 1 
+
+State Machine - |led|top:u_top|uart_debug:u_uart_debug|state
+Name state.S_WRITE_MEM state.S_CRC_END state.S_CRC_CALC state.S_CRC_START state.S_SEND_NAK state.S_SEND_ACK state.S_REC_REMAIN_PACKET state.S_REC_FIRST_PACKET state.S_GET_BYTE state.S_WAIT_BYTE2 state.S_WAIT_BYTE state.S_CLEAR_UART_RX_OVER_FLAG state.S_INIT_UART_BAUD state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.S_INIT_UART_BAUD 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.S_CLEAR_UART_RX_OVER_FLAG 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.S_WAIT_BYTE 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S_WAIT_BYTE2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S_GET_BYTE 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S_REC_FIRST_PACKET 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S_REC_REMAIN_PACKET 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S_SEND_ACK 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S_SEND_NAK 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S_CRC_START 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.S_CRC_CALC 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.S_CRC_END 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_WRITE_MEM 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

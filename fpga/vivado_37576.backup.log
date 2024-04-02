@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 12 14:56:40 2022
+# Process ID: 37576
+# Current directory: G:/FPGA_ZYNQ_IC_Learn/ZYNQ/AX7020_learn_project/course_s1_fpga/01_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37168 G:\FPGA_ZYNQ_IC_Learn\ZYNQ\AX7020_learn_project\course_s1_fpga\01_led\led.xpr
+# Log file: G:/FPGA_ZYNQ_IC_Learn/ZYNQ/AX7020_learn_project/course_s1_fpga/01_led/vivado.log
+# Journal file: G:/FPGA_ZYNQ_IC_Learn/ZYNQ/AX7020_learn_project/course_s1_fpga/01_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/FPGA_ZYNQ_IC_Learn/ZYNQ/AX7020_learn_project/course_s1_fpga/01_led/led.xpr
+INFO: [Project 1-313] Project file moved from 'F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 849.629 ; gain = 132.637
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 12 14:58:09 2022...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug 29 14:10:16 2019
+# Process ID: 12028
+# Current directory: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim/xsim.dir/vtf_led_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim/xsim.dir/vtf_led_test_behav/webtalk/xsim_webtalk.tcl -notrace

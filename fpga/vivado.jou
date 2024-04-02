@@ -1,0 +1,657 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar  2 18:22:12 2024
+# Process ID: 18704
+# Current directory: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14760 G:\FPGA_ZYNQ_IC_Learn\IC\riscv\riscv32_order_pipeline\riscv_zicsrim_cpu\fpga\led.xpr
+# Log file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/vivado.log
+# Journal file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/ram.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/div.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/cpu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/ifu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/clint.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/param.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/rtu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/lsu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/xreg.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fpga_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u_top/m1_we ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+refresh_design
+write_schematic -format pdf -orientation portrait G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/schematic.pdf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+set_property flow {Vivado Synthesis 2017} [get_runs synth_1]
+create_run synth_2 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property strategy Flow_AreaOptimized_high [get_runs synth_2]
+set_property flow {Vivado Implementation 2017} [get_runs impl_1]
+set_property strategy Performance_Explore [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+update_ip_catalog
+update_ip_catalog
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_0 -dir g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.USE_INCLK_SWITCHOVER {false} CONFIG.PRIM_IN_FREQ {50} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {20} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {10} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50} CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} CONFIG.SECONDARY_IN_FREQ {44.445} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKIN2_JITTER_PS {224.99} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {22.499} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {45} CONFIG.MMCM_CLKOUT1_DIVIDE {90} CONFIG.MMCM_CLKOUT2_DIVIDE {18} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {258.893} CONFIG.CLKOUT1_PHASE_ERROR {161.614} CONFIG.CLKOUT2_JITTER {296.755} CONFIG.CLKOUT2_PHASE_ERROR {161.614} CONFIG.CLKOUT3_JITTER {210.144} CONFIG.CLKOUT3_PHASE_ERROR {161.614}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files  g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+export_ip_user_files -of_objects [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 6 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files/sim_scripts -ip_user_files_dir G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files -ipstatic_source_dir G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/modelsim} {questa=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/questa} {riviera=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/riviera} {activehdl=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+wait_on_run synth_2
+close_design
+open_run synth_2 -name synth_2
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_rst_gen/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u_top/m1_we ]]
+save_constraints
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+close_design
+open_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+report_utilization -name utilization_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+reset_run impl_1
+reset_run synth_1
+current_run [get_runs synth_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_ila_0_m1_wdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes timer_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes u_top/m1_we -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+current_run [get_runs synth_2]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+current_run [get_runs synth_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+current_run [get_runs synth_2]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+close_design
+current_run [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_rst_gen/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/u_uart/uart_baud[0]} {u_top/u_uart/uart_baud[1]} {u_top/u_uart/uart_baud[2]} {u_top/u_uart/uart_baud[3]} {u_top/u_uart/uart_baud[4]} {u_top/u_uart/uart_baud[5]} {u_top/u_uart/uart_baud[6]} {u_top/u_uart/uart_baud[7]} {u_top/u_uart/uart_baud[8]} {u_top/u_uart/uart_baud[9]} {u_top/u_uart/uart_baud[10]} {u_top/u_uart/uart_baud[11]} {u_top/u_uart/uart_baud[12]} {u_top/u_uart/uart_baud[13]} {u_top/u_uart/uart_baud[14]} {u_top/u_uart/uart_baud[15]} {u_top/u_uart/uart_baud[16]} {u_top/u_uart/uart_baud[17]} {u_top/u_uart/uart_baud[18]} {u_top/u_uart/uart_baud[19]} {u_top/u_uart/uart_baud[20]} {u_top/u_uart/uart_baud[21]} {u_top/u_uart/uart_baud[22]} {u_top/u_uart/uart_baud[23]} {u_top/u_uart/uart_baud[24]} {u_top/u_uart/uart_baud[25]} {u_top/u_uart/uart_baud[26]} {u_top/u_uart/uart_baud[27]} {u_top/u_uart/uart_baud[28]} {u_top/u_uart/uart_baud[29]} {u_top/u_uart/uart_baud[30]} {u_top/u_uart/uart_baud[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/u_uart/uart_status[0]} {u_top/u_uart/uart_status[1]} {u_top/u_uart/uart_status[2]} {u_top/u_uart/uart_status[3]} {u_top/u_uart/uart_status[4]} {u_top/u_uart/uart_status[5]} {u_top/u_uart/uart_status[6]} {u_top/u_uart/uart_status[7]} {u_top/u_uart/uart_status[8]} {u_top/u_uart/uart_status[9]} {u_top/u_uart/uart_status[10]} {u_top/u_uart/uart_status[11]} {u_top/u_uart/uart_status[12]} {u_top/u_uart/uart_status[13]} {u_top/u_uart/uart_status[14]} {u_top/u_uart/uart_status[15]} {u_top/u_uart/uart_status[16]} {u_top/u_uart/uart_status[17]} {u_top/u_uart/uart_status[18]} {u_top/u_uart/uart_status[19]} {u_top/u_uart/uart_status[20]} {u_top/u_uart/uart_status[21]} {u_top/u_uart/uart_status[22]} {u_top/u_uart/uart_status[23]} {u_top/u_uart/uart_status[24]} {u_top/u_uart/uart_status[25]} {u_top/u_uart/uart_status[26]} {u_top/u_uart/uart_status[27]} {u_top/u_uart/uart_status[28]} {u_top/u_uart/uart_status[29]} {u_top/u_uart/uart_status[30]} {u_top/u_uart/uart_status[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/u_uart/tx_data[0]} {u_top/u_uart/tx_data[1]} {u_top/u_uart/tx_data[2]} {u_top/u_uart/tx_data[3]} {u_top/u_uart/tx_data[4]} {u_top/u_uart/tx_data[5]} {u_top/u_uart/tx_data[6]} {u_top/u_uart/tx_data[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/u_uart/uart_ctrl[0]} {u_top/u_uart/uart_ctrl[1]} {u_top/u_uart/uart_ctrl[2]} {u_top/u_uart/uart_ctrl[3]} {u_top/u_uart/uart_ctrl[4]} {u_top/u_uart/uart_ctrl[5]} {u_top/u_uart/uart_ctrl[6]} {u_top/u_uart/uart_ctrl[7]} {u_top/u_uart/uart_ctrl[8]} {u_top/u_uart/uart_ctrl[9]} {u_top/u_uart/uart_ctrl[10]} {u_top/u_uart/uart_ctrl[11]} {u_top/u_uart/uart_ctrl[12]} {u_top/u_uart/uart_ctrl[13]} {u_top/u_uart/uart_ctrl[14]} {u_top/u_uart/uart_ctrl[15]} {u_top/u_uart/uart_ctrl[16]} {u_top/u_uart/uart_ctrl[17]} {u_top/u_uart/uart_ctrl[18]} {u_top/u_uart/uart_ctrl[19]} {u_top/u_uart/uart_ctrl[20]} {u_top/u_uart/uart_ctrl[21]} {u_top/u_uart/uart_ctrl[22]} {u_top/u_uart/uart_ctrl[23]} {u_top/u_uart/uart_ctrl[24]} {u_top/u_uart/uart_ctrl[25]} {u_top/u_uart/uart_ctrl[26]} {u_top/u_uart/uart_ctrl[27]} {u_top/u_uart/uart_ctrl[28]} {u_top/u_uart/uart_ctrl[29]} {u_top/u_uart/uart_ctrl[30]} {u_top/u_uart/uart_ctrl[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/u_uart/state[0]} {u_top/u_uart/state[1]} {u_top/u_uart/state[2]} {u_top/u_uart/state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/u_uart/uart_rx[0]} {u_top/u_uart/uart_rx[1]} {u_top/u_uart/uart_rx[2]} {u_top/u_uart/uart_rx[3]} {u_top/u_uart/uart_rx[4]} {u_top/u_uart/uart_rx[5]} {u_top/u_uart/uart_rx[6]} {u_top/u_uart/uart_rx[7]} {u_top/u_uart/uart_rx[8]} {u_top/u_uart/uart_rx[9]} {u_top/u_uart/uart_rx[10]} {u_top/u_uart/uart_rx[11]} {u_top/u_uart/uart_rx[12]} {u_top/u_uart/uart_rx[13]} {u_top/u_uart/uart_rx[14]} {u_top/u_uart/uart_rx[15]} {u_top/u_uart/uart_rx[16]} {u_top/u_uart/uart_rx[17]} {u_top/u_uart/uart_rx[18]} {u_top/u_uart/uart_rx[19]} {u_top/u_uart/uart_rx[20]} {u_top/u_uart/uart_rx[21]} {u_top/u_uart/uart_rx[22]} {u_top/u_uart/uart_rx[23]} {u_top/u_uart/uart_rx[24]} {u_top/u_uart/uart_rx[25]} {u_top/u_uart/uart_rx[26]} {u_top/u_uart/uart_rx[27]} {u_top/u_uart/uart_rx[28]} {u_top/u_uart/uart_rx[29]} {u_top/u_uart/uart_rx[30]} {u_top/u_uart/uart_rx[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u_top/u_uart_debug/mem_addr_o[0]} {u_top/u_uart_debug/mem_addr_o[1]} {u_top/u_uart_debug/mem_addr_o[2]} {u_top/u_uart_debug/mem_addr_o[3]} {u_top/u_uart_debug/mem_addr_o[4]} {u_top/u_uart_debug/mem_addr_o[5]} {u_top/u_uart_debug/mem_addr_o[6]} {u_top/u_uart_debug/mem_addr_o[7]} {u_top/u_uart_debug/mem_addr_o[8]} {u_top/u_uart_debug/mem_addr_o[9]} {u_top/u_uart_debug/mem_addr_o[10]} {u_top/u_uart_debug/mem_addr_o[11]} {u_top/u_uart_debug/mem_addr_o[12]} {u_top/u_uart_debug/mem_addr_o[13]} {u_top/u_uart_debug/mem_addr_o[14]} {u_top/u_uart_debug/mem_addr_o[15]} {u_top/u_uart_debug/mem_addr_o[16]} {u_top/u_uart_debug/mem_addr_o[17]} {u_top/u_uart_debug/mem_addr_o[18]} {u_top/u_uart_debug/mem_addr_o[19]} {u_top/u_uart_debug/mem_addr_o[20]} {u_top/u_uart_debug/mem_addr_o[21]} {u_top/u_uart_debug/mem_addr_o[22]} {u_top/u_uart_debug/mem_addr_o[23]} {u_top/u_uart_debug/mem_addr_o[24]} {u_top/u_uart_debug/mem_addr_o[25]} {u_top/u_uart_debug/mem_addr_o[26]} {u_top/u_uart_debug/mem_addr_o[27]} {u_top/u_uart_debug/mem_addr_o[28]} {u_top/u_uart_debug/mem_addr_o[29]} {u_top/u_uart_debug/mem_addr_o[30]} {u_top/u_uart_debug/mem_addr_o[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 14 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {u_top/u_uart_debug/state[0]} {u_top/u_uart_debug/state[1]} {u_top/u_uart_debug/state[2]} {u_top/u_uart_debug/state[3]} {u_top/u_uart_debug/state[4]} {u_top/u_uart_debug/state[5]} {u_top/u_uart_debug/state[6]} {u_top/u_uart_debug/state[7]} {u_top/u_uart_debug/state[8]} {u_top/u_uart_debug/state[9]} {u_top/u_uart_debug/state[10]} {u_top/u_uart_debug/state[11]} {u_top/u_uart_debug/state[12]} {u_top/u_uart_debug/state[13]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {u_top/u_uart_debug/mem_wdata_o[0]} {u_top/u_uart_debug/mem_wdata_o[1]} {u_top/u_uart_debug/mem_wdata_o[2]} {u_top/u_uart_debug/mem_wdata_o[3]} {u_top/u_uart_debug/mem_wdata_o[4]} {u_top/u_uart_debug/mem_wdata_o[5]} {u_top/u_uart_debug/mem_wdata_o[6]} {u_top/u_uart_debug/mem_wdata_o[7]} {u_top/u_uart_debug/mem_wdata_o[8]} {u_top/u_uart_debug/mem_wdata_o[9]} {u_top/u_uart_debug/mem_wdata_o[10]} {u_top/u_uart_debug/mem_wdata_o[11]} {u_top/u_uart_debug/mem_wdata_o[12]} {u_top/u_uart_debug/mem_wdata_o[13]} {u_top/u_uart_debug/mem_wdata_o[14]} {u_top/u_uart_debug/mem_wdata_o[15]} {u_top/u_uart_debug/mem_wdata_o[16]} {u_top/u_uart_debug/mem_wdata_o[17]} {u_top/u_uart_debug/mem_wdata_o[18]} {u_top/u_uart_debug/mem_wdata_o[19]} {u_top/u_uart_debug/mem_wdata_o[20]} {u_top/u_uart_debug/mem_wdata_o[21]} {u_top/u_uart_debug/mem_wdata_o[22]} {u_top/u_uart_debug/mem_wdata_o[23]} {u_top/u_uart_debug/mem_wdata_o[24]} {u_top/u_uart_debug/mem_wdata_o[25]} {u_top/u_uart_debug/mem_wdata_o[26]} {u_top/u_uart_debug/mem_wdata_o[27]} {u_top/u_uart_debug/mem_wdata_o[28]} {u_top/u_uart_debug/mem_wdata_o[29]} {u_top/u_uart_debug/mem_wdata_o[30]} {u_top/u_uart_debug/mem_wdata_o[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list u_top/m1_we ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list u_top/u_uart_debug/mem_rd_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list u_top/u_uart_debug/mem_we_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list u_top/u_uart/rx_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list u_top/u_uart/rx_start ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} {u_top/u_uart/rx_done} {u_top/u_uart/rx_start} {u_top/u_uart/state} {u_top/u_uart/tx_data} {u_top/u_uart/uart_baud} {u_top/u_uart/uart_ctrl} {u_top/u_uart/uart_rx} {u_top/u_uart/uart_status} {u_top/u_uart_debug/mem_addr_o} {u_top/u_uart_debug/mem_rd_o} {u_top/u_uart_debug/mem_wdata_o} {u_top/u_uart_debug/mem_we_o} {u_top/u_uart_debug/state} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes u_top/m1_we -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes u_top/u_uart/rx_start -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} {u_top/u_uart/rx_done} {u_top/u_uart/rx_start} {u_top/u_uart/state} {u_top/u_uart/tx_data} {u_top/u_uart/uart_baud} {u_top/u_uart/uart_ctrl} {u_top/u_uart/uart_rx} {u_top/u_uart/uart_status} {u_top/u_uart_debug/mem_addr_o} {u_top/u_uart_debug/mem_rd_o} {u_top/u_uart_debug/mem_wdata_o} {u_top/u_uart_debug/mem_we_o} {u_top/u_uart_debug/state} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+current_run [get_runs synth_2]
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

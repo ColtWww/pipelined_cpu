@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug 29 14:16:43 2019
+# Process ID: 10072
+# Current directory: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.runs/ila_synth_1
+# Command line: vivado.exe -log ila.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila.tcl
+# Log file: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.runs/ila_synth_1/ila.vds
+# Journal file: F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.runs/ila_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila.tcl -notrace

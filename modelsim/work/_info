@@ -1,0 +1,581 @@
+m255
+K3
+z0
+13
+cModel Technology
+dD:\Quartus_FPGA\_ModelsimSE_10.1C\win64
+vclint
+Z0 !s110 1712008594
+!i10b 1
+!s100 aknnVP?AlTLi4S>`5dQYX2
+I=BM4?7oIBY<gz5Amah^SZ1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Colt0/Desktop/riscv_zicsrim_cpu(1)/riscv_zicsrim_cpu/modelsim
+w1709299240
+8../rtl/core/clint.v
+F../rtl/core/clint.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1712008594.000000
+Z5 !s107 ../tb/core_tb.v|../tb/core_uart_monitor_tb.v|../tb/core_data_monitor_tb.v|../rtl/top.v|../rtl/core/cpu.v|../rtl/core/clint.v|../rtl/core/rtu.v|../rtl/core/exu.v|../rtl/core/div.v|../rtl/core/idu.v|../rtl/core/ifu.v|../rtl/core/lsu.v|../rtl/core/mul.v|../rtl/core/csr.v|../rtl/core/xreg.v|../rtl/perips/uart_debug.v|../rtl/perips/uart.v|../rtl/perips/rbm.v|../rtl/perips/ram.v|../rtl/utils/dff.v|../rtl/param.v|
+Z6 !s90 -reportprogress|300|-O0|-vlog01compat|-f|flist.f|
+!s101 -O0
+!i113 1
+Z7 o-O0 -vlog01compat
+Z8 !s92 -O0 -vlog01compat +define+SIMULATION +incdir+../rtl
+Z9 tCvgOpt 0
+vcore_data_monitor_tb
+Z10 !s110 1712008595
+!i10b 1
+!s100 bhImb:E4VCfHU?X9L4f]d2
+IK:@@DVNBScHg<gZ5ji>SP3
+R1
+R2
+w1709261443
+8../tb/core_data_monitor_tb.v
+F../tb/core_data_monitor_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vcore_uart_monitor_tb
+R10
+!i10b 1
+!s100 Lkk;jV>BZaZ^FJLL:S`Fa2
+IUBRcYO^0POL8oQ1fRZh3>3
+R1
+R2
+w1709261423
+8../tb/core_uart_monitor_tb.v
+F../tb/core_uart_monitor_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vcpu
+R10
+!i10b 1
+!s100 cboGAAZhQV2J0N48B2MZn3
+Ii@d6LM6@IF=Z4L]mmU0Bb1
+R1
+R2
+w1709378200
+8../rtl/core/cpu.v
+F../rtl/core/cpu.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vcsr
+R0
+!i10b 1
+!s100 JWV=UYj5Zm_iiVNah`fAF1
+I>L;Vd=a_j;BW3Ez^ZAaPh3
+R1
+R2
+w1709214475
+8../rtl/core/csr.v
+F../rtl/core/csr.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdff_en_2
+R0
+!i10b 1
+!s100 Hin2hMk4R_KXj4Eb4STj52
+IAJHYWb6DkWM<A[58REmI61
+R1
+R2
+Z11 w1709301102
+Z12 8../rtl/utils/dff.v
+Z13 F../rtl/utils/dff.v
+Z14 L0 111
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdff_en_l
+R0
+!i10b 1
+!s100 d^]UiT2CWiEm3;mBWSTQo2
+I6`N0MDn1JFZT3DMbY`an90
+R1
+R2
+R11
+R12
+R13
+L0 79
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdff_rst_0
+R0
+!i10b 1
+!s100 gAFkeE?Q5HFB2P6SPm@T93
+I>K@S^a<:z8jWjJ[3h3gA@2
+R1
+R2
+R11
+R12
+R13
+L0 42
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdff_rst_1
+R0
+!i10b 1
+!s100 QzKNRjm?W;9DL:X;A41B41
+IU>QLa`HECI>XkHga;U_;60
+R1
+R2
+R11
+R12
+R13
+L0 61
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdff_rst_def
+R0
+!i10b 1
+!s100 =h^i45gFmAURO4n?lfYG92
+I`1VL@P]bMC]VzFNhXE;`d1
+R1
+R2
+R11
+R12
+R13
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vdiv
+R0
+!i10b 1
+!s100 l2KOS1FZe^M?i<>TiVim93
+Ic;9j<8J<e]07_Nc:a0Gj@1
+R1
+R2
+w1709299402
+8../rtl/core/div.v
+F../rtl/core/div.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vexu
+R0
+!i10b 1
+!s100 zJVKlJZL9nUeAX=^<l`YL3
+IZD6gn]CgoG:0mTZb76j7Y1
+R1
+R2
+w1709213893
+8../rtl/core/exu.v
+F../rtl/core/exu.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vidu
+R0
+!i10b 1
+!s100 ihVIdVcYSabXXIjG6CLBj2
+IiB^?lSZ7M=BLBFU;:f_oQ0
+R1
+R2
+w1709213383
+8../rtl/core/idu.v
+F../rtl/core/idu.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vifu
+R0
+!i10b 1
+!s100 g6T_1<Z5bKP5V>9=;z4Gg0
+IPgeH6ZnF3638T@OjECOhV3
+R1
+R2
+w1709213003
+8../rtl/core/ifu.v
+F../rtl/core/ifu.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vlsu
+R0
+!i10b 1
+!s100 cmY3S:AP9CGkbEa4Ij=l03
+IMOfeJAY0^nT3JD2PnZ_Q11
+R1
+R2
+w1709214232
+8../rtl/core/lsu.v
+F../rtl/core/lsu.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vmul
+R0
+!i10b 1
+!s100 @XB?@=OKdnJ@Gn^h0R^Lo2
+IAoiAUN4BMCo3]E7:LF3JZ2
+R1
+R2
+w1709213970
+8../rtl/core/mul.v
+F../rtl/core/mul.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vpa_dff_en_2
+!s110 1709301072
+!i10b 1
+!s100 :8TWMPj=H;60i@i;R>DKd0
+INM?=H10>N2961DWibzkEB1
+R1
+dG:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/modelsim
+w1709299197
+R12
+R13
+R14
+R3
+r1
+!s85 0
+31
+!s108 1709301072.000000
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+!s92 -O0 -vlog01compat +incdir+../rtl
+R9
+vram
+R0
+!i10b 1
+!s100 N=1_Feo50:i0ejnBP8<ln0
+IjK^o>QznzS8@4YZ97<7iE1
+R1
+R2
+w1709441884
+8../rtl/perips/ram.v
+F../rtl/perips/ram.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vrbm
+R0
+!i10b 1
+!s100 6G>?gNSbB8R_KIVj]zKH32
+IVIg5e<1CM@:Vf0OGOljDP2
+R1
+R2
+w1709296915
+8../rtl/perips/rbm.v
+F../rtl/perips/rbm.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vregfile
+R0
+!i10b 1
+!s100 hCPb<h9`jjLI0;gdEc=@G1
+IH=]6fjGFAEJhF5C<IKVn_2
+R1
+R2
+w1709214383
+8../rtl/core/rtu.v
+F../rtl/core/rtu.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vtb
+R10
+!i10b 1
+!s100 @Mm]O>K0GOII5Di2>oUNB3
+Ia<LHG6NTKnM]C7SkTe>mm1
+R1
+R2
+w1709383512
+8../tb/core_tb.v
+F../tb/core_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vtop
+R10
+!i10b 1
+!s100 FB1QoHLEdjmDgNnPJnf<P2
+I>ng2`3O@;Gi<cQCBkPY;Z0
+R1
+R2
+w1709450674
+8../rtl/top.v
+F../rtl/top.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vuart
+R0
+!i10b 1
+!s100 kD]RC:8Q@7:7A82J`3Lz72
+IdmP;0MBZWl;M3bSn3bVh=3
+R1
+R2
+w1709450264
+8../rtl/perips/uart.v
+F../rtl/perips/uart.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vuart_debug
+R0
+!i10b 1
+!s100 HA=GnLQaRYmYi<>UC233F2
+I3;^JRQR>8b]CHhe17m`Mz2
+R1
+R2
+w1709453979
+8../rtl/perips/uart_debug.v
+F../rtl/perips/uart_debug.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vxreg
+R0
+!i10b 1
+!s100 ia6ReICBCSCgP1NCJ^b8=3
+IBVA=ETFGLnb6H:lGiAFkz1
+R1
+R2
+w1709214427
+8../rtl/core/xreg.v
+F../rtl/core/xreg.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+R9

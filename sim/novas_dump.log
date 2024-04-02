@@ -1,0 +1,502 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: msvEnableDumpingMode('simv: undefined symbol: msvEnableDumpingMode')
+ANF: msvGetVersion('simv: undefined symbol: msvGetVersion')
+ANF: msvGetInstProp('simv: undefined symbol: msvGetInstProp')
+ANF: msvIsSpiceEngineReady('simv: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback('simv: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle('simv: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst('simv: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle('simv: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig('simv: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo('simv: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease('simv: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc('simv: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback('simv: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback('simv: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback('simv: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue('simv: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback('simv: undefined symbol: msvSetEndofSimCallback')
+ANF: msvIgnoredProbe('simv: undefined symbol: msvIgnoredProbe')
+ANF: msvGetThruNetInfo('simv: undefined symbol: msvGetThruNetInfo')
+ANF: msvFreeThruNetInfo('simv: undefined symbol: msvFreeThruNetInfo')
+ANF: PI_ace_get_output_time_unit('simv: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync('simv: undefined symbol: PI_ace_sim_sync')
+ANF: msvGetRereadInitFile('simv: undefined symbol: msvGetRereadInitFile')
+ANF: msvSetBeforeRereadCallback('simv: undefined symbol: msvSetBeforeRereadCallback')
+ANF: msvSetAfterRereadCallback('simv: undefined symbol: msvSetAfterRereadCallback')
+ANF: msvSetForceCallback('simv: undefined symbol: msvSetForceCallback')
+ANF: msvSetReleaseCallback('simv: undefined symbol: msvSetReleaseCallback')
+ANF: msvGetForceStatus('simv: undefined symbol: msvGetForceStatus')
+ANF: vhdi_dt_get_type('simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('simv: undefined symbol: vhdi_node_ist_get_value_addr')
+VCS compile option:
+ option[0]: simv
+ option[1]: -l
+ option[2]: sim.log
+ option[3]: +seed=230428171201
+ option[4]: +ntb_random_seed=230428171201
+ option[5]: +vcs+lic+wait
+ option[6]: +inst_file=../sim_core/inst_data/rv32um-p-remu.data
+ option[7]: -cm_dir
+ option[8]: sim_cov
+ option[9]: /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/bin/vcs1
+ option[10]: -Mcc=gcc
+ option[11]: -Mcplusplus=g++
+ option[12]: -Masflags=
+ option[13]: -Mcfl= -pipe -fPIC -O -I/eda/synopsys/vcs-mx/O-2018.09-SP2/include 
+ option[14]: -Mxcflags= -pipe -fPIC -I/eda/synopsys/vcs-mx/O-2018.09-SP2/include
+ option[15]: -Mldflags= -rdynamic 
+ option[16]: -Mout=simv
+ option[17]: -Mamsrun=
+ option[18]: -Mvcsaceobjs=
+ option[19]: -Mobjects= /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/libvirsim.so /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/liberrorinf.so /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/libvfs.so 
+ option[20]: -Mexternalobj=
+ option[21]: -Msaverestoreobj=/eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o
+ option[22]: -Mcrt0=
+ option[23]: -Mcrtn=
+ option[24]: -Mcsrc=
+ option[25]: -Msyslibs=/eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[26]: -l
+ option[27]: vcs.log
+ option[28]: -full64
+ option[29]: -timescale=1ns/1ps
+ option[30]: -Xcbug=0x1
+ option[31]: -debug_access+all
+ option[32]: +vpi
+ option[33]: +vcsd1
+ option[34]: +itf+/eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
+ option[35]: +error+10000
+ option[36]: +vcs+initreg+random
+ option[37]: +lint=TFIPC-L
+ option[38]: +vcs+lic+wait
+ option[39]: +plusarg_save
+ option[40]: +define+GB_SERDES_TIMESCALE=1ns/1fs
+ option[41]: -fsdb
+ option[42]: -P
+ option[43]: /eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+ option[44]: -top
+ option[45]: tb_top
+ option[46]: -cm_dir
+ option[47]: sim_cov
+ option[48]: -picarchive
+ option[49]: -debug_acc+fsdb
+ option[50]: +cli+1
+ option[51]: -debug=1
+ option[52]: +memcbk
+ option[53]: -sverilog
+ option[54]: +vpi
+ option[55]: -gen_obj
+ option[56]: -f
+ option[57]: filelist.vc
+ option[58]: -load
+ option[59]: /eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[60]: timescale=1ns/1ps
+Chronologic Simulation VCS Release O-2018.09-SP2_Full64
+Linux 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64
+CPU cores: 64
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		unlimited
+coredumpsize		unlimited
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		unlimited
+maxproc		8254691
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+SYNOPSYS_HOME=/eda/synopsys/syn/P-2019.03-SP1
+SYNOPSYS_LC_ROOT=/eda/public/lib_compiler_vM-2016.12/lc/M-2016.12/
+MANPATH=/eda/ibm/lsf/10.1/man:/eda/system/modules/share/man:/usr/share/man:/usr/openwin/share/man:/usr/openwin/share/man:/usr/local/man
+XDG_SESSION_ID=9933
+LSB_EXEC_CLUSTER=bzwhpc
+MY_IP=/localdata/hpc08/xuhan/IP
+COMMON_DIR=/localdata/hpc14/xuhan/NE6000/IP/development/common/r1p1
+HOSTNAME=hpc20
+LSB_EFFECTIVE_RSRCREQ=select[(cpu>=0) && (type == local)] order[r15s:pg] 
+_LMFILES__modshare=/eda/system/modules/modulefiles/tools/synopsys/verdi/201809:1:/eda/public/env/modules/bcompare/4.3.7:1:/eda/system/modules/modulefiles/tools/misc/vim/8.20:1:/eda/system/modules/modulefiles/tools/misc/vim/8.2:1:/eda/system/modules/modulefiles/tools/synopsys/vcs/201809:1:/eda/system/modules/modulefiles/tools/xilinx/vivado/2020:1:/eda/system/modules/modulefiles/groups/analog:1:/eda/system/modules/modulefiles/tools/misc/lic/lic:1:/eda/system/modules/modulefiles/tools/synopsys/dc_shell/201903:1:/eda/system/modules/modulefiles/tools/synopsys/vc_vip/202109:1:/eda/system/modules/modulefiles/tools/synopsys/pts/201903:1:/eda/public/env/modules/lib_compiler/2016.12:1:/eda/system/modules/modulefiles/tools/cadence/confrml/1920:1:/eda/system/modules/modulefiles/tools/synopsys/coretools/201903:1:/eda/system/modules/modulefiles/tools/synopsys/fm/201903:1:/eda/system/modules/modulefiles/tools/synopsys/mem_compiler/202212:1:/eda/system/modules/modulefiles/tools/synopsys/spyglass/201903:1
+DASM_TCL=/eda/public/dynamic_asm_1.0/linux64/tcl/linux/ver8.5
+LSF_LIM_API_NTRIES=1
+NOVAS_HOME=/eda/synopsys/verdi/Verdi_O-2018.09-SP2
+MODULEPATH_modshare=/eda/system/modules/modulefiles/tools/misc:2:/eda/system/modules/modulefiles/tools/xilinx:1:/eda/system/modules/modulefiles/tools/synopsys:1:/eda/system/modules/modulefiles/groups:1:/eda/system/modules/modulefiles/tools/mentor:1:/eda/system/modules/modulefiles/tools/cadence:1
+LSF_LOGDIR=/eda/ibm/lsf/log
+TERM=xterm
+VIM_HOME=/eda/others/vim8.2
+SPG_HOME=/eda/synopsys/spyglass/P-2019.06-SP2
+MODULES_CMD=/eda/system/modules/libexec/modulecmd.tcl
+SHELL=/bin/bash
+LSB_BATCH_JID=456713
+HISTSIZE=1000
+MAKEFLAGS=inst_data=../sim_core/inst_data/rv32um-p-remu.data
+SSH_CLIENT=10.28.40.22 61664 22
+TMPDIR=./
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+LS_EXECCWD=/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core
+PERL5LIB=/home/xuhan/perl5/lib/perl5:
+DESIGNWARE_HOME=/eda/synopsys/vc_vip/201903
+LS_JOBPID=27259
+LSB_JOBRES_CALLBACK=43926@hpc20
+LSB_MAX_NUM_PROCESSORS=1
+QTDIR=/usr/lib64/qt-3.3
+LSB_JOB_EXECUSER=xuhan
+LSB_JOBID=456713
+LSF_SERVERDIR=/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/etc
+QTINC=/usr/lib64/qt-3.3/include
+PERL_MB_OPT=--install_base /home/xuhan/perl5
+LSB_JOBRES_PID=27259
+BC_HOME=/eda/public/bcompare-4.3.7
+NOVAS=/eda/synopsys/verdi/Verdi_O-2018.09-SP2
+LSB_JOBNAME=make inst_data=../sim_core/inst_data/rv32um-p-remu.data
+SSH_TTY=/dev/pts/147
+MEMAKER=/process/umc28/umc28hpc/faraday/mem/memaker/latest/ftclib
+BSUB_BLOCK_EXEC_HOST=
+LSF_LIBDIR=/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/lib
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSB_PROJECT_NAME=default
+FTC=/process/umc28/umc28hpc/faraday/mem/memaker/latest/ftclib
+SVN_EDITOR=/bin/gvim
+USER=xuhan
+MAKEOVERRIDES=${-*-command-variables-*-}
+LD_LIBRARY_PATH=/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/eda/public/python37/lib:/eda/public/python27/lib:/eda/public/dynamic_asm_1.0/linux64/tcl/linux/ver8.5/lib:/eda/public/goldenbench2.0/tcl/linux/ver8.5/lib:/eda/public/bcompare-4.3.7/lib64/beyondcompare:/eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64:/eda/synopsys/vcs-mx/O-2018.09-SP2/amd64/lib:/lib64:lib:/usr/lib64:/usr/lib
+LS_COLORS=di=01;34
+SBD_KRB5CCNAME_VAL=
+MHOME=/eda/system/modules
+LSB_EEXEC_REAL_UID=
+ENV=/eda/system/modules/init/profile.sh
+TCL_LIBRARY=/eda/public/dynamic_asm_1.0/linux64/tcl/linux/ver8.5/lib/tcl8.5
+VC_VIP_HOME=/eda/synopsys/vc_vip/202109
+CUR_DISPLAY=10.28.40.22
+CONFML_HOME=/eda/cadence/conformal192
+HOSTTYPE=X86_64
+BUS_DIR=/localdata/hpc14/xuhan/NE6000/IP/development/bus/r1p0
+LSF_INVOKE_CMD=bsub
+MAKELEVEL=1
+LS_EXEC_T=START
+SNPSLMD_LICENSE_FILE=27020@nis01:27020@nis02:27020@nis01:27020@nis02:27000@login03
+LSF_VERSION=34
+MFLAGS=
+ARMLMD_LICENSE_FILE=8224@nis01:8224@nis02
+LS_SUBCWD=/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core
+LSB_SUB_RES_REQ=cpu>=0
+IP_DIR=/localdata/hpc14/xuhan/NE6000/IP/development
+LSB_UNIXGROUP_INT=staff
+GB_HOME=/eda/public/goldenbench2.0
+LSB_HOSTS=hpc20
+LSB_JOBFILENAME=/home/xuhan/.lsbatch/1682673115.456713
+LSB_JOBINDEX=0
+MAIL=/var/spool/mail/xuhan
+PATH=/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/bin:/home/xuhan/learn/sv_unittest:/eda/public/vim_82/bin:/eda/public/python37/bin:/eda/public/python27/bin:/process/umc28/umc28hpc/faraday/mem/memaker/latest/ftclib/EXE:/process/umc28/umc28hpc/arm/mem/memExplorer/r0p0/bin:/process/umc28/umc28hpc/arm/mem/rf_2p_hce/r0p2/bin:/process/umc28/umc28hpc/arm/mem/rf_sp_hde/r0p0/bin:/process/umc28/umc28hpc/arm/mem/rf_sp_hse/r1p0/bin:/process/umc28/umc28hpc/arm/mem/rom_via_hdd/r0p0/bin:/process/umc28/umc28hpc/arm/mem/sram_2p_uhde_hvt_mvt/r1p0/bin:/process/umc28/umc28hpc/arm/mem/sram_dp_hde/r1p0/bin:/process/umc28/umc28hpc/arm/mem/sram_sp_hde/r0p0/bin:/process/umc28/umc28hpc/arm/mem/sram_sp_hsd/r0p0/bin:/localdata/hpc14/xuhan/NE6000/IP/development/script/r1p0/bin:/localdata/hpc14/xuhan/NE6000P/trunk/development/script/bin:/eda/cadence/conformal192/bin:/eda/cadence/conformal192/tools/bin:/eda/xilinx/2020/Vitis_HLS/2020.2/bin:/eda/xilinx/2020/Model_Composer/2020.2/bin:/eda/xilinx/2020/Vitis/2020.2/aietools/bin:/eda/xilinx/2020/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/arm/lin/bin:/eda/xilinx/2020/Vitis/2020.2/gnu/microblaze/lin/bin:/eda/xilinx/2020/Vitis/2020.2/bin:/eda/xilinx/2020/Vivado/2020.2/bin:setenv:PATH:/eda/xilinx/2020/DocNav:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/utility/valgrind/bin:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/lib/pyabc/bin:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/lib/multi-vcst/auxx/monet/scripts/lint/comparison_script/perl-5.8.3/bin:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/gdb/bin:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/examples/bin:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/bin:/eda/synopsys/syn/P-2019.03-SP1/amd64/syn/bin:/eda/synopsys/syn/P-2019.03-SP1/amd64/bin:/eda/synopsys/syn/P-2019.03-SP1/bin:/eda/synopsys/pts/P-2019.03/bin://eda/synopsys/fm/P-2019.03/bin:/eda/synopsys/coretools/P-2019.06-SP3/bin:/eda/public/cmake/bin:/eda/public/nsp_assembler_lnx/bin:/eda/others/ddd3.3.12/bin:/eda/public/dynamic_asm_1.0/linux64/bin:/eda/public/goldenbench2.0/bin:/eda/synopsys/mem_compiler/U-2022.12/linux64/bin:/eda/synopsys/mem_compiler/U-2022.12/bin:/eda/public/lib_compiler_vM-2016.12/lc/M-2016.12/bin:/eda/public/bcompare-4.3.7/bin:/eda/synopsys/vc_vip/202109/bin:/eda/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/eda/synopsys/vcs-mx/O-2018.09-SP2/bin:/eda/synopsys/vcs-mx/O-2018.09-SP2/amd64/bin:/eda/others/vim8.2/bin:.:/home/xuhan/mbin:/home/xuhan/bin:/usr/sbin:/usr/bin:/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/etc:/eda/public/vim_82/bin:/eda/system/modules/bin:/usr/lib64/qt-3.3/bin:/home/xuhan/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/eda/synopsys/fpga/P-2019.03/bin/:/home/xuhan/.local/bin:/home/xuhan/bin
+XILINX_VITIS=/eda/xilinx/2020/Vitis/2020.2
+PT_HOME=/eda/synopsys/pts/P-2019.03
+LSB_EXIT_PRE_ABORT=99
+_=./simv
+LSB_JOBEXIT_STAT=0
+VERDI_HOME=/eda/synopsys/verdi/Verdi_O-2018.09-SP2
+GB_EMU=/eda/public/goldenbench2.0/emulib
+PWD=/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core
+_LMFILES_=/eda/system/modules/modulefiles/tools/misc/vim/8.20:/eda/system/modules/modulefiles/tools/misc/lic/lic:/eda/system/modules/modulefiles/groups/analog:/eda/system/modules/modulefiles/tools/misc/vim/8.2:/eda/system/modules/modulefiles/tools/synopsys/vcs/201809:/eda/system/modules/modulefiles/tools/synopsys/verdi/201809:/eda/system/modules/modulefiles/tools/synopsys/vc_vip/202109:/eda/public/env/modules/bcompare/4.3.7:/eda/public/env/modules/lib_compiler/2016.12:/eda/system/modules/modulefiles/tools/synopsys/mem_compiler/202212:/eda/system/modules/modulefiles/tools/synopsys/coretools/201903:/eda/system/modules/modulefiles/tools/synopsys/fm/201903:/eda/system/modules/modulefiles/tools/synopsys/pts/201903:/eda/system/modules/modulefiles/tools/synopsys/dc_shell/201903:/eda/system/modules/modulefiles/tools/synopsys/spyglass/201903:/eda/system/modules/modulefiles/tools/xilinx/vivado/2020:/eda/system/modules/modulefiles/tools/cadence/confrml/1920
+LSB_INTERACTIVE=Y
+VCS_HOME=/eda/synopsys/vcs-mx/O-2018.09-SP2
+FM_HOME=//eda/synopsys/fm/P-2019.03
+LANG=zh_CN.UTF-8
+LSB_RES_GET_FANOUT_INFO=Y
+LSB_CHKFILENAME=/home/xuhan/.lsbatch/1682673115.456713
+MODULEPATH=/eda/system/modules/modulefiles/groups:/eda/system/modules/modulefiles/tools/synopsys:/eda/system/modules/modulefiles/tools/cadence:/eda/system/modules/modulefiles/tools/mentor:/eda/system/modules/modulefiles/tools/xilinx:/eda/system/modules/modulefiles/tools/misc:/eda/public/env/modules
+LOADEDMODULES=vim/8.20:lic/lic:analog:vim/8.2:vcs/201809:verdi/201809:vc_vip/202109:bcompare/4.3.7:lib_compiler/2016.12:mem_compiler/202212:coretools/201903:fm/201903:pts/201903:dc_shell/201903:spyglass/201903:vivado/2020:confrml/1920
+VCS_ARCH_OVERRIDE=linux
+KDEDIRS=/usr
+LSB_DJOB_HOSTFILE=/home/xuhan/.lsbatch/1682673115.456713.hostfile
+XILINX_HLS=/eda/xilinx/2020/Vitis_HLS/2020.2
+LSF_JOB_TIMESTAMP_VALUE=1682673116
+FTCLMD_LICENSE_FILE=/process/umc28/umc28hpc/faraday/mem/memaker/latest/ftclib/flexlm/license/memaker.dat
+SCRIPT_DIR=/localdata/hpc14/xuhan/NE6000/IP/development/script/r1p0
+LSB_AFFINITY_HOSTFILE=/home/xuhan/.lsbatch/1682673115.456713.hostAffinityFile
+CDS_Netlisting_Mode=Analog
+LSF_BINDIR=/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/bin
+SYNOPSYS=/eda/synopsys/spyglass/P-2019.06-SP2
+XILINX_VIVADO=/eda/xilinx/2020/Vivado/2020.2
+LM_LICENSE_FILE=/process/umc28/umc28hpc/faraday/mem/memaker/latest/ftclib/flexlm/license/memaker.dat:27020@nis01:27020@nis02:8224@nis01:8224@nis02:59001@nis01:59001@nis02
+LSB_DJOB_NUMPROC=1
+NPAM_LIC_FILE=/eda/public/nsp_assembler_lnx/license.txt
+LSB_EXEC_HOSTTYPE=X86_64
+HISTCONTROL=ignoredups
+MY_NE6000=/localdata/hpc08/xuhan/NE6000/trunk
+PATH_modshare=:11:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:1:/eda/system/modules/bin:1:/eda/synopsys/syn/P-2019.03-SP1/amd64/bin:1:/eda/synopsys/vcs-mx/O-2018.09-SP2/amd64/bin:1:/home/xuhan/mbin:1:/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/etc:1:/eda/xilinx/2020/Model_Composer/2020.2/bin:1://eda/synopsys/fm/P-2019.03/bin:1:/eda/xilinx/2020/Vivado/2020.2/bin:1:/eda/synopsys/fpga/P-2019.03/bin/:1:setenv:1:/eda/synopsys/syn/P-2019.03-SP1/amd64/syn/bin:1:/eda/synopsys/verdi/Verdi_O-2018.09-SP2/bin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/utility/valgrind/bin:1:/eda/xilinx/2020/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:1:/eda/public/dynamic_asm_1.0/linux64/bin:1:/home/xuhan/bin:1:/usr/local/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/arm/lin/bin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/lib/pyabc/bin:1:/eda/others/ddd3.3.12/bin:1:/eda/public/nsp_assembler_lnx/bin:1:PATH:1:/eda/xilinx/2020/Vitis_HLS/2020.2/bin:1:/usr/local/sbin:1:/eda/others/vim8.2/bin:1:/eda/synopsys/mem_compiler/U-2022.12/bin:1:/eda/xilinx/2020/Vitis/2020.2/bin:1:/eda/synopsys/mem_compiler/U-2022.12/linux64/bin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/lib/multi-vcst/auxx/monet/scripts/lint/comparison_script/perl-5.8.3/bin:1:/eda/public/goldenbench2.0/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:1:/eda/public/lib_compiler_vM-2016.12/lc/M-2016.12/bin:1:/eda/xilinx/2020/DocNav:1:/home/xuhan/perl5/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/microblaze/lin/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:1:/eda/public/vim_82/bin:1:/eda/synopsys/vc_vip/202109/bin:1:/eda/synopsys/syn/P-2019.03-SP1/bin:1:/usr/sbin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/gdb/bin:1:/eda/xilinx/2020/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:1:/eda/public/bcompare-4.3.7/bin:1:/eda/synopsys/spyglass/P-2019.06-SP2/SPYGLASS_HOME/examples/bin:1:.:1:/usr/lib64/qt-3.3/bin:1:/eda/public/cmake/bin:1:/eda/synopsys/coretools/P-2019.06-SP3/bin:1:/usr/bin:1:/eda/xilinx/2020/Vitis/2020.2/aietools/bin:1:/eda/synopsys/pts/P-2019.03/bin:1:/eda/synopsys/vcs-mx/O-2018.09-SP2/bin:1:/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/bin:1:/eda/cadence/conformal192/bin:1:/eda/cadence/conformal192/tools/bin:1
+SHLVL=3
+HOME=/home/xuhan
+MC_HOME=/eda/synopsys/mem_compiler/U-2022.12
+ldisplay=hpc02:10.0
+JOB_TERMINATE_INTERVAL=10
+inst_data=../sim_core/inst_data/rv32um-p-remu.data
+BINARY_TYPE_HPC=
+LSB_ACCT_FILE=/tmp/456713.tmpdir/.1682673115.456713.acct
+DASM_HOME=/eda/public/dynamic_asm_1.0/linux64
+LSB_SUB_HOST=login02
+LSFUSER=xuhan
+PERL_LOCAL_LIB_ROOT=:/home/xuhan/perl5
+NPAM_HOME=/eda/public/nsp_assembler_lnx
+BASH_ENV=/eda/system/modules/init/bash
+__LSF_JOB_TMPDIR__=/tmp/456713.tmpdir
+LSB_SUB_USER=xuhan
+LOGNAME=xuhan
+DC_HOME=/eda/synopsys/syn/P-2019.03-SP1
+LSB_MCPU_HOSTS=hpc20 1 
+LSB_OUTDIR=/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core
+LSB_QUEUE=front
+QTLIB=/usr/lib64/qt-3.3/lib
+GB_LICENSE_FILE=/eda/public/dynamic_asm_1.0/linux64/bzwx.lic
+MGLS_LICENSE_FILE=27001@nis01:27001@nis02
+LD_LIBRARY_PATH_modshare=/eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64:1:/lib64:1:/eda/public/dynamic_asm_1.0/linux64/tcl/linux/ver8.5/lib:1:/eda/public/bcompare-4.3.7/lib64/beyondcompare:1:/eda/synopsys/vcs-mx/O-2018.09-SP2/amd64/lib:1:/usr/lib64:1:/eda/public/goldenbench2.0/tcl/linux/ver8.5/lib:1:lib:1:/usr/lib:1:/eda/ibm/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:1
+SSH_CONNECTION=10.28.40.22 61664 10.28.20.238 22
+XDG_DATA_DIRS=/home/xuhan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CDS_LIC_FILE=5280@nis01:5280@nis02
+MODULESHOME=/eda/system/modules
+XLINXD_LICENSE_FILE=/eda/license/vivado2018+IPs.lic
+LSF_CGROUP_TOPDIR_KEY=bzwhpc
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+AKS_LICENSE_FILE=8889@nis01
+LOADEDMODULES_modshare=fm/201903:1:mem_compiler/202212:1:bcompare/4.3.7:1:vim/8.2:1:vivado/2020:1:spyglass/201903:1:pts/201903:1:lic/lic:1:coretools/201903:1:analog:1:lib_compiler/2016.12:1:vim/8.20:1:confrml/1920:1:dc_shell/201903:1:vc_vip/202109:1:verdi/201809:1:vcs/201809:1
+LSB_XFER_OP=
+PROJ_DIR=/localdata/hpc14/xuhan/NE6000P/trunk/development
+DISPLAY=10.28.40.22:0.0
+XDG_RUNTIME_DIR=/run/user/1077
+LSB_EEXEC_REAL_GID=
+LC_HOME=/eda/public/lib_compiler_vM-2016.12/lc/M-2016.12
+GB_TCL=/eda/public/goldenbench2.0/tcl/linux/ver8.5
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+PRJROOT=..
+LSF_ENVDIR=/eda/ibm/lsf/conf
+PYTHON_HOME=/eda/public/python37
+SVUT=/home/xuhan/learn/sv_unittest
+COMPANY=Beizhongwangxin
+LSB_SHMODE=y
+LSB_DJOB_RANKFILE=/home/xuhan/.lsbatch/1682673115.456713.hostfile
+PERL_MM_OPT=INSTALL_BASE=/home/xuhan/perl5
+BASH_FUNC_module()=() {  _moduleraw "$@" 2>&1
+}
+BASH_FUNC_switchml()=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /eda/system/modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /eda/system/modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /eda/system/modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC__moduleraw()=() {  unset _mlre _mlIFS _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre}/usr/bin/tclsh /eda/system/modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /eda/system/modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS _mlshdbg;
+ return $_mlstatus
+}
+VCS_HEAP_EXEC=true
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_EXEC_DONE=1
+LC_ALL=C
+DVE=/eda/synopsys/vcs-mx/O-2018.09-SP2/gui/dve
+SPECMAN_OUTPUT_TO_TTY=1
+Runtime command line arguments:
+argv[0]=simv
+argv[1]=-l
+argv[2]=sim.log
+argv[3]=+seed=230428171201
+argv[4]=+ntb_random_seed=230428171201
+argv[5]=+vcs+lic+wait
+argv[6]=+inst_file=../sim_core/inst_data/rv32um-p-remu.data
+argv[7]=-cm_dir
+argv[8]=sim_cov
+370 profile - 100
+          CPU/Mem usage: 0.060 sys,  0.230 user,  272.33M mem
+371 Fri Apr 28 17:12:02 2023
+372 pliAppInit
+373 FSDB_GATE is set.
+374 FSDB_RTL is set.
+375 Enable Parallel Dumping.
+376 pliAppMiscSet: New Sim Round
+377 pliEntryInit
+378 LIBSSCORE=found /eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
+379 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+380 (C) 1996 - 2019 by Synopsys, Inc.
+381 sps_call_fsdbDumpfile_main at 0 : ../tb/core_tb.sv(115)
+382 argv[0]: (inter.fsdb)
+383 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+384 *Verdi* : Create FSDB file 'inter.fsdb'
+385 compile option from '/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/simv.daidir/vcs_rebuild'.
+386   "vcs '-full64' '-l' 'vcs.log' '-sverilog' '-timescale=1ns/1ps' '-debug_pp' '-debug_access+all' '+error+10000' '+vcs+initreg+random' '+lint=TFIPC-L' '+vcs+lic+wait' '+plusarg_save' '+define+GB_SERDES_TIMESCALE=1ns/1fs' '-fsdb' '-top' 'tb_top' '-f' 'filelist.vc' '-cm_dir' 'sim_cov' 2>&1"
+387 FSDB_VCS_ENABLE_FAST_VC is enable
+388 sps_call_fsdbDumpvars_vd_main at 0 : ../tb/core_tb.sv(116)
+389 argv[0]: (0)
+390 argv[1]: (handle) tb_top
+391 [spi_vcs_vd_ppi_create_root]: no upf option
+392 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+393 *Verdi* : Begin traversing the scope (tb_top), layer (0).
+394 *Verdi* : End of traversing.
+395 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.080 sys,  0.260 user,  385.75M mem
+                   incr: 0.010 sys,  0.020 user,  25.44M mem
+                   accu: 0.010 sys,  0.020 user,  25.44M mem
+              accu incr: 0.010 sys,  0.020 user,  25.44M mem
+
+          Count usage: 3474 var,  2381 idcode,  995 callback
+                 incr: 3474 var,  2381 idcode,  995 callback
+                 accu: 3474 var,  2381 idcode,  995 callback
+            accu incr: 3474 var,  2381 idcode,  995 callback
+396 Fri Apr 28 17:12:02 2023
+397 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.080 sys,  0.260 user,  386.81M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.010 sys,  0.020 user,  26.50M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 3474 var,  2381 idcode,  995 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 3474 var,  2381 idcode,  995 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+398 Fri Apr 28 17:12:02 2023
+399 End of simulation at 15471000
+400 Fri Apr 28 17:12:02 2023
+401 Begin FSDB profile info:
+402 FSDB Writer : bc1(4171) bcn(14598) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.009092) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+403 End FSDB profile info
+404 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+405                        ProduceTime:0.707892235 ConsumerTime:0.000000000 Buffer:64MB
+406 SimExit
+407 Sim process exit

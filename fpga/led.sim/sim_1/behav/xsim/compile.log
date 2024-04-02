@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.srcs/sources_1/new/led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.srcs/sim_1/new/vtf_led_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vtf_led_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led/led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,1385 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar  3 14:34:39 2024
+# Process ID: 19028
+# Current directory: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+# Command line: vivado.exe -log fpga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+# Log file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/fpga_top.vds
+# Journal file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace
+Command: synth_design -top fpga_top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22664 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 378.195 ; gain = 99.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_top' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:53]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:70]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'top' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:4]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:20]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:21]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:23]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:24]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:25]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:26]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:27]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:28]
+INFO: [Synth 8-638] synthesizing module 'uart_debug' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:29]
+	Parameter S_IDLE bound to: 14'b00000000000001 
+	Parameter S_INIT_UART_BAUD bound to: 14'b00000000000010 
+	Parameter S_CLEAR_UART_RX_OVER_FLAG bound to: 14'b00000000000100 
+	Parameter S_WAIT_BYTE bound to: 14'b00000000001000 
+	Parameter S_WAIT_BYTE2 bound to: 14'b00000000010000 
+	Parameter S_GET_BYTE bound to: 14'b00000000100000 
+	Parameter S_REC_FIRST_PACKET bound to: 14'b00000001000000 
+	Parameter S_REC_REMAIN_PACKET bound to: 14'b00000010000000 
+	Parameter S_SEND_ACK bound to: 14'b00000100000000 
+	Parameter S_SEND_NAK bound to: 14'b00001000000000 
+	Parameter S_CRC_START bound to: 14'b00010000000000 
+	Parameter S_CRC_CALC bound to: 14'b00100000000000 
+	Parameter S_CRC_END bound to: 14'b01000000000000 
+	Parameter S_WRITE_MEM bound to: 14'b10000000000000 
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:36]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:37]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:38]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:39]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:205]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:221]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:241]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:254]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:273]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:291]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:309]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:327]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:345]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:364]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:389]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:408]
+INFO: [Synth 8-256] done synthesizing module 'uart_debug' (2#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:29]
+INFO: [Synth 8-638] synthesizing module 'cpu' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/cpu.v:5]
+INFO: [Synth 8-638] synthesizing module 'dff_rst_0' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_def' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_def' (3#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_0' (4#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+INFO: [Synth 8-638] synthesizing module 'ifu' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/ifu.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ifu' (5#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/ifu.v:5]
+INFO: [Synth 8-638] synthesizing module 'dff_en_2' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+	Parameter DW bound to: 8'b00100000 
+INFO: [Synth 8-256] done synthesizing module 'dff_en_2' (6#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+INFO: [Synth 8-638] synthesizing module 'idu' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:217]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:244]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:283]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:302]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:215]
+INFO: [Synth 8-256] done synthesizing module 'idu' (7#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v:6]
+INFO: [Synth 8-638] synthesizing module 'dff_en_2__parameterized0' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+	Parameter DW bound to: 8'b00001000 
+INFO: [Synth 8-256] done synthesizing module 'dff_en_2__parameterized0' (7#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+INFO: [Synth 8-638] synthesizing module 'dff_en_2__parameterized1' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+	Parameter DW bound to: 8'b00000101 
+INFO: [Synth 8-256] done synthesizing module 'dff_en_2__parameterized1' (7#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+INFO: [Synth 8-638] synthesizing module 'dff_en_2__parameterized2' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_en_2__parameterized2' (7#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+INFO: [Synth 8-638] synthesizing module 'dff_en_2__parameterized3' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+	Parameter DW bound to: 8'b00001100 
+INFO: [Synth 8-256] done synthesizing module 'dff_en_2__parameterized3' (7#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:111]
+INFO: [Synth 8-638] synthesizing module 'exu' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:286]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:322]
+INFO: [Synth 8-638] synthesizing module 'mul' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v:5]
+INFO: [Synth 8-256] done synthesizing module 'mul' (8#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v:5]
+INFO: [Synth 8-638] synthesizing module 'div' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/div.v:4]
+INFO: [Synth 8-638] synthesizing module 'dff_rst_0__parameterized0' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_def__parameterized0' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_def__parameterized0' (8#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_0__parameterized0' (8#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+INFO: [Synth 8-638] synthesizing module 'dff_rst_0__parameterized1' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+	Parameter DW bound to: 8'b00000101 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_def__parameterized1' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+	Parameter DW bound to: 8'b00000101 
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_def__parameterized1' (8#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_0__parameterized1' (8#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+INFO: [Synth 8-256] done synthesizing module 'div' (9#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/div.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:446]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:461]
+INFO: [Synth 8-256] done synthesizing module 'exu' (10#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v:5]
+INFO: [Synth 8-638] synthesizing module 'clint' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/clint.v:4]
+	Parameter INT_STATE_IDLE bound to: 2'b00 
+	Parameter INT_STATE_MCALL bound to: 2'b01 
+	Parameter INT_STATE_MRET bound to: 2'b10 
+	Parameter INT_TYPE_NONE bound to: 2'b00 
+	Parameter INT_TYPE_EXCRPTION bound to: 2'b01 
+	Parameter INT_TYPE_INTERRUPT bound to: 2'b10 
+	Parameter INT_TYPE_SOFTINT bound to: 2'b11 
+	Parameter CSR_STATE_IDLE bound to: 3'b000 
+	Parameter CSR_STATE_WAIT bound to: 3'b001 
+	Parameter CSR_STATE_MEPC bound to: 3'b010 
+	Parameter CSR_STATE_MSTATUS bound to: 3'b011 
+	Parameter CSR_STATE_MCAUSE bound to: 3'b100 
+	Parameter CSR_STATE_MRET bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_0__parameterized2' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_def__parameterized2' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_def__parameterized2' (10#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_0__parameterized2' (10#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/clint.v:179]
+INFO: [Synth 8-256] done synthesizing module 'clint' (11#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/clint.v:4]
+INFO: [Synth 8-638] synthesizing module 'dff_rst_0__parameterized3' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+	Parameter DW bound to: 8'b00100000 
+INFO: [Synth 8-638] synthesizing module 'dff_rst_def__parameterized3' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+	Parameter DW bound to: 8'b00100000 
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_def__parameterized3' (11#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dff_rst_0__parameterized3' (11#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:42]
+INFO: [Synth 8-638] synthesizing module 'lsu' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/lsu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'lsu' (12#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/lsu.v:3]
+INFO: [Synth 8-638] synthesizing module 'regfile' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/rtu.v:4]
+INFO: [Synth 8-638] synthesizing module 'csr' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:57]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:75]
+WARNING: [Synth 8-5788] Register _mscratchcswl_reg in module csr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:65]
+INFO: [Synth 8-256] done synthesizing module 'csr' (13#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:4]
+INFO: [Synth 8-638] synthesizing module 'xreg' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/xreg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'xreg' (14#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/xreg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (15#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/rtu.v:4]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (16#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/cpu.v:5]
+INFO: [Synth 8-638] synthesizing module 'rbm' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v:5]
+	Parameter SLAVE_0_ADDR bound to: 4'b1001 
+	Parameter SLAVE_1_ADDR bound to: 4'b1000 
+	Parameter SLAVE_2_ADDR bound to: 4'b0011 
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v:80]
+INFO: [Synth 8-256] done synthesizing module 'rbm' (17#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v:5]
+INFO: [Synth 8-638] synthesizing module 'ram' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/ram.v:4]
+	Parameter LOC_RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_DEPTH bound to: 8192 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter RAM_BWE_GROUP bound to: 0 - type: integer 
+	Parameter LOC_BWE_WIDTH bound to: 64 - type: integer 
+	Parameter RAM_FPGA_TYPE bound to: 1 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+	Parameter FPGA_RAM_WIDTH bound to: 32 - type: integer 
+	Parameter FPGA_BWE_WIDTH bound to: 1 - type: integer 
+	Parameter GROUP_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram' (18#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/ram.v:4]
+INFO: [Synth 8-638] synthesizing module 'uart' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:5]
+	Parameter BAUD_115200 bound to: 173 - type: integer 
+	Parameter S_IDLE bound to: 4'b0001 
+	Parameter S_START bound to: 4'b0010 
+	Parameter S_SEND_BYTE bound to: 4'b0100 
+	Parameter S_STOP bound to: 4'b1000 
+	Parameter UART_CTRL bound to: 8'b00000000 
+	Parameter UART_STATUS bound to: 8'b00000100 
+	Parameter UART_BAUD bound to: 8'b00001000 
+	Parameter UART_TXDATA bound to: 8'b00001100 
+	Parameter UART_RXDATA bound to: 8'b00010000 
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:32]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:35]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:41]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:44]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:59]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:65]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:69]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:169]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:293]
+WARNING: [Synth 8-6014] Unused sequential element rx_q0_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:198]
+WARNING: [Synth 8-6014] Unused sequential element rx_q1_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:198]
+INFO: [Synth 8-256] done synthesizing module 'uart' (19#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:5]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_rbm'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_cpu'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:82]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_rom'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:144]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_uart'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:208]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ram'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:161]
+WARNING: [Synth 8-3848] Net s0_data in module/entity top does not have driver. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:32]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:4]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_top'. This will prevent further optimization [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:93]
+WARNING: [Synth 8-3848] Net uart_tx in module/entity fpga_top does not have driver. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:27]
+INFO: [Synth 8-256] done synthesizing module 'fpga_top' (21#1) [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:23]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[31]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[30]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[29]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[28]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[27]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[26]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[25]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[24]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[23]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[22]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[21]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[20]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[19]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[18]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[17]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[16]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[15]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[14]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[13]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[12]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[11]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[10]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[9]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[8]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[31]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[30]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[29]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[28]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[27]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[26]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[25]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[24]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[23]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[22]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[21]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[20]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[19]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[18]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[17]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[16]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[15]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[14]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[13]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[12]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[11]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[10]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[9]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[8]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[7]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[6]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[5]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[4]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[3]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[2]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[1]
+WARNING: [Synth 8-3331] design ram has unconnected port i_mem_bweb1[0]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[27]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[26]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[25]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[24]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[23]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[22]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[21]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[20]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[19]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[18]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[17]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[16]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[15]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[14]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[13]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[12]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[11]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[10]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[9]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[8]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[7]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[6]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[5]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[4]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[3]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[2]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[1]
+WARNING: [Synth 8-3331] design rbm has unconnected port m_addr_i[0]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[31]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[30]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[29]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[28]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[27]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[26]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[25]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[24]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[23]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[22]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[21]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[20]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[19]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[18]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[17]
+WARNING: [Synth 8-3331] design rbm has unconnected port s3_data_i[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 457.715 ; gain = 179.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[31] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[30] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[29] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[28] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[27] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[26] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[25] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[24] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[23] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[22] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[21] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[20] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[19] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[18] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[17] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[16] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[15] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[14] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[13] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[12] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[11] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[10] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[9] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[8] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[7] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[6] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[5] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[4] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[3] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[2] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[1] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[0] to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v:99]
+WARNING: [Synth 8-3295] tying undriven pin u_top:rxd to constant 0 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:93]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 457.715 ; gain = 179.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/dcp1/clk_wiz_0_in_context.xdc] for cell 'u_clk_rst_gen'
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/dcp1/clk_wiz_0_in_context.xdc] for cell 'u_clk_rst_gen'
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 844.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 844.719 ; gain = 566.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 844.719 ; gain = 566.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/dcp1/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/.Xil/Vivado-19028-DESKTOP-355QV49/dcp1/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for u_clk_rst_gen. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 844.719 ; gain = 566.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v:156]
+INFO: [Synth 8-5546] ROM "rx_data_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[64]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[65]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[67]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[68]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[69]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[70]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[71]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[72]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[73]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[74]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[75]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[76]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[77]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[78]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[79]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[80]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[81]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[82]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[83]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[84]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[85]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[86]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[87]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[88]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[89]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[90]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[91]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[92]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[93]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[94]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[95]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[96]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[97]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[98]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data_reg[99]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "mem_addr_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_we_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_wdata_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "crc_byte_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_func" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_func" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "iresult_i_vld" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "iresult_m_vld" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'clint'
+INFO: [Synth 8-5544] ROM "csr_waddr_vld" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csr_waddr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_jump_flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csr_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element _cycle_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:38]
+INFO: [Synth 8-5544] ROM "cycle_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_clk_edge_level" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cycle_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:151]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:153]
+WARNING: [Synth 8-6014] Unused sequential element rx_clk_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:244]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          CSR_STATE_IDLE |                              000 |                              000
+          CSR_STATE_WAIT |                              001 |                              001
+          CSR_STATE_MRET |                              010 |                              101
+          CSR_STATE_MEPC |                              011 |                              010
+       CSR_STATE_MSTATUS |                              100 |                              011
+        CSR_STATE_MCAUSE |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'csr_state_reg' using encoding 'sequential' in module 'clint'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 844.719 ; gain = 566.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 3     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 19    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               32 Bit    Registers := 64    
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 142   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Multipliers : 
+	                16x32  Multipliers := 2     
++---RAMs : 
+	             256K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 61    
+	   4 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 3     
+	   7 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	  22 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input     31 Bit        Muxes := 1     
+	   8 Input     31 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 5     
+	  15 Input     14 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 5     
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   8 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 343   
+	   4 Input      1 Bit        Muxes := 146   
+	   8 Input      1 Bit        Muxes := 5     
+	  22 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 9     
+	  32 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fpga_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module uart_debug 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 138   
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 5     
+	  15 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 274   
+	   4 Input      1 Bit        Muxes := 135   
+Module dff_rst_def 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ifu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff_en_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module idu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input     31 Bit        Muxes := 1     
+	   8 Input     31 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module dff_en_2__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module dff_en_2__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module dff_en_2__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dff_en_2__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module mul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
++---Multipliers : 
+	                16x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module dff_rst_def__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module dff_rst_def__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module exu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  22 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+Module dff_rst_def__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module clint 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+Module dff_rst_def__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module lsu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module csr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
++---Muxes : 
+	  12 Input     32 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 9     
+Module xreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  32 Input      1 Bit        Muxes := 32    
+Module cpu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rbm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             256K Bit         RAMs := 1     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   5 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_we_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_addr_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_wdata_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_func" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v:22]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v:21]
+DSP Report: Generating DSP iresult_final_low0, operation Mode is: A*B.
+DSP Report: operator iresult_final_low0 is absorbed into DSP iresult_final_low0.
+DSP Report: operator iresult_final_low0 is absorbed into DSP iresult_final_low0.
+DSP Report: Generating DSP iresult_final_low0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator iresult_final_low0 is absorbed into DSP iresult_final_low0.
+DSP Report: operator iresult_final_low0 is absorbed into DSP iresult_final_low0.
+DSP Report: Generating DSP iresult_final_high0, operation Mode is: A*B.
+DSP Report: operator iresult_final_high0 is absorbed into DSP iresult_final_high0.
+DSP Report: operator iresult_final_high0 is absorbed into DSP iresult_final_high0.
+DSP Report: Generating DSP iresult_final_high0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator iresult_final_high0 is absorbed into DSP iresult_final_high0.
+DSP Report: operator iresult_final_high0 is absorbed into DSP iresult_final_high0.
+INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element u_csr/_cycle_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v:38]
+WARNING: [Synth 8-6014] Unused sequential element rx_clk_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:244]
+WARNING: [Synth 8-6014] Unused sequential element cycle_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:151]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v:153]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM fpga_mem_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[0]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[7]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[6]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[5]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[4]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_uart_debug/need_to_rec_bytes_reg[3]' (FDRE) to 'u_top/u_uart_debug/need_to_rec_bytes_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_top/u_uart_debug/\need_to_rec_bytes_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (need_to_rec_bytes_reg[2]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[31]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[30]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[29]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[28]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[27]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[26]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[25]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[24]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[23]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[6]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[5]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[4]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[3]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[2]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[1]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (fw_file_size_reg[0]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (write_mem_byte_index0_reg[1]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (write_mem_addr_reg[0]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (write_mem_byte_index1_reg[0]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (write_mem_byte_index3_reg[1]) is unused and will be removed from module uart_debug.
+WARNING: [Synth 8-3332] Sequential element (write_mem_byte_index3_reg[0]) is unused and will be removed from module uart_debug.
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[0]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[4]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[5]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[6]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[7]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[8]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[9]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[10]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[11]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[12]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[13]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[14]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[15]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[16]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[17]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[18]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[19]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[20]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[21]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[22]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[23]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[24]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[25]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[26]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[27]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[28]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[29]' (FDC) to 'u_top/u_cpu/u_clint/dff_break_cause/qout_r_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_top/u_cpu/u_clint/\dff_break_cause/qout_r_reg[30] )
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[0]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[1]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[2]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[3]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[4]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[5]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[6]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[7]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[8]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[9]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[10]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[11]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[12]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[13]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[14]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[15]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[16]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[17]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[18]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[19]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[20]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[21]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[22]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[23]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[24]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[25]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[26]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[27]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[28]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[29]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[30]' (FDE) to 'u_top/u_cpu/u_regfile/u_xreg/_x0_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_top/u_cpu/u_regfile/\u_xreg/_x0_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (u_div/next_remainder_reg[64]) is unused and will be removed from module exu.
+WARNING: [Synth 8-3332] Sequential element (dff_break_cause/qout_r_reg[30]) is unused and will be removed from module clint.
+WARNING: [Synth 8-3332] Sequential element (u_xreg/_x0_reg[31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dff_exu_inst_set/qout_r_reg[2]) is unused and will be removed from module cpu.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_top/u_cpu/dff_exu_inst_func/\qout_r_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[12]) is unused and will be removed from module dff_en_2__3.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[31]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[30]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[29]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[28]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[27]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[26]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[25]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[24]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[23]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[22]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[21]) is unused and will be removed from module dff_en_2.
+WARNING: [Synth 8-3332] Sequential element (qout_r_reg[20]) is unused and will be removed from module dff_en_2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 854.586 ; gain = 576.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:        | fpga_mem_reg | 8 K x 32(NO_CHANGE)    | W |   | 8 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|ram:        | fpga_mem_reg | 8 K x 32(NO_CHANGE)    | W |   | 8 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mul         | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mul         | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_rst_gen/clk_out1' to pin 'u_clk_rst_gen/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_rst_gen/clk_out2' to pin 'u_clk_rst_gen/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_rst_gen/clk_out3' to pin 'u_clk_rst_gen/bbstub_clk_out3/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 994.609 ; gain = 716.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1203.520 ; gain = 925.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|u_top/u_rom | fpga_mem_reg | 8 K x 32(NO_CHANGE)    | W |   | 8 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|ram:        | fpga_mem_reg | 8 K x 32(NO_CHANGE)    | W |   | 8 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:128]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:128]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:128]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v:128]
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_rom/fpga_mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_top/u_ram/fpga_mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_rbm:s0_data_i[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rx_done_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin u_top:rxd to constant 0
+WARNING: [Synth 8-5753] loadless multi-driven net uart_rx with 1st driver pin 'u_top/txd' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:93]
+WARNING: [Synth 8-5753] loadless multi-driven net uart_rx with 2nd driver pin 'uart_rx' [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/new/led.v:23]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |   272|
+|3     |DSP48E1   |     4|
+|4     |LUT1      |   287|
+|5     |LUT2      |   399|
+|6     |LUT3      |   533|
+|7     |LUT4      |   556|
+|8     |LUT5      |   632|
+|9     |LUT6      |  3187|
+|10    |MUXF7     |   681|
+|11    |MUXF8     |   192|
+|12    |RAMB36E1  |    16|
+|13    |FDCE      |   787|
+|14    |FDPE      |     6|
+|15    |FDRE      |  2531|
+|16    |FDSE      |     7|
+|17    |IBUF      |     2|
+|18    |OBUF      |     1|
+|19    |OBUFT     |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------+-------------------------------+------+
+|      |Instance                    |Module                         |Cells |
++------+----------------------------+-------------------------------+------+
+|1     |top                         |                               | 10098|
+|2     |  u_top                     |top                            |  9994|
+|3     |    u_uart_debug            |uart_debug                     |  3604|
+|4     |    u_cpu                   |cpu                            |  5788|
+|5     |      dff_exu_csr_addr      |dff_en_2__parameterized3       |   207|
+|6     |      dff_exu_inst_func     |dff_en_2                       |  1372|
+|7     |      dff_exu_inst_set      |dff_en_2__parameterized0       |    10|
+|8     |      dff_exu_reg1_rdata    |dff_en_2_0                     |   164|
+|9     |      dff_exu_reg2_rdata    |dff_en_2_1                     |   113|
+|10    |      dff_exu_reg_waddr     |dff_en_2__parameterized1       |     5|
+|11    |      dff_exu_reg_waddr_vld |dff_en_2__parameterized2       |     2|
+|12    |      dff_exu_uimm_data     |dff_en_2_2                     |   103|
+|13    |      dff_hold_flag_1r      |dff_rst_0                      |    33|
+|14    |        _dff                |dff_rst_def_26                 |    33|
+|15    |      dff_inst_data_1r      |dff_en_2_3                     |   290|
+|16    |      dff_jump_flag_1r      |dff_rst_0_4                    |     1|
+|17    |        _dff                |dff_rst_def_25                 |     1|
+|18    |      dff_mau_reg_addr      |dff_rst_0__parameterized1      |     5|
+|19    |        _dff                |dff_rst_def__parameterized1_24 |     5|
+|20    |      dff_mau_reg_addr_vld  |dff_rst_0_5                    |     1|
+|21    |        _dff                |dff_rst_def_23                 |     1|
+|22    |      dff_mem_addr_1r       |dff_rst_0__parameterized3      |    81|
+|23    |        _dff                |dff_rst_def__parameterized3    |    81|
+|24    |      dff_mem_en_flag_1r    |dff_rst_0_6                    |     1|
+|25    |        _dff                |dff_rst_def_22                 |     1|
+|26    |      dff_op_load_1r        |dff_rst_0_7                    |     1|
+|27    |        _dff                |dff_rst_def_21                 |     1|
+|28    |      dff_subop_sign_1r     |dff_rst_0_8                    |     1|
+|29    |        _dff                |dff_rst_def_20                 |     1|
+|30    |      dff_subop_size_1r     |dff_rst_0__parameterized2      |     2|
+|31    |        _dff                |dff_rst_def__parameterized2_19 |     2|
+|32    |      u_clint               |clint                          |   141|
+|33    |        dff_break_cause     |dff_en_2_17                    |    10|
+|34    |        dff_irq_1r          |dff_rst_0__parameterized2_18   |     5|
+|35    |          _dff              |dff_rst_def__parameterized2    |     5|
+|36    |      u_exu                 |exu                            |   841|
+|37    |        u_div               |div                            |   729|
+|38    |          dff_data_dividend |dff_rst_0__parameterized0      |    80|
+|39    |            _dff            |dff_rst_def__parameterized0_16 |    80|
+|40    |          dff_data_divisor  |dff_rst_0__parameterized0_9    |   322|
+|41    |            _dff            |dff_rst_def__parameterized0    |   322|
+|42    |          dff_op            |dff_rst_0_10                   |     1|
+|43    |            _dff            |dff_rst_def_15                 |     1|
+|44    |          dff_q_sign        |dff_rst_0_11                   |     1|
+|45    |            _dff            |dff_rst_def_14                 |     1|
+|46    |          dff_r_sign        |dff_rst_0_12                   |     1|
+|47    |            _dff            |dff_rst_def                    |     1|
+|48    |          dff_reg_waddr     |dff_rst_0__parameterized1_13   |    46|
+|49    |            _dff            |dff_rst_def__parameterized1    |    46|
+|50    |        u_mul               |mul                            |   112|
+|51    |      u_ifu                 |ifu                            |   202|
+|52    |      u_regfile             |regfile                        |  2203|
+|53    |        u_csr               |csr                            |   379|
+|54    |        u_xreg              |xreg                           |  1824|
+|55    |    u_rbm                   |rbm                            |    41|
+|56    |    u_rom                   |ram__1                         |     8|
+|57    |    u_ram                   |ram                            |     8|
+|58    |    u_uart                  |uart                           |   473|
++------+----------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 327 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1258.777 ; gain = 593.312
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1258.777 ; gain = 980.316
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1167 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+368 Infos, 228 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1258.777 ; gain = 991.848
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/fpga_top.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  3 14:35:58 2024...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar  3 14:40:53 2024
+# Process ID: 24964
+# Current directory: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1
+# Command line: vivado.exe -log fpga_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_top.tcl -notrace
+# Log file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.vdi
+# Journal file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace

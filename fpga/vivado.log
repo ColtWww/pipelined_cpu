@@ -1,0 +1,1330 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar  2 18:22:12 2024
+# Process ID: 18704
+# Current directory: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14760 G:\FPGA_ZYNQ_IC_Learn\IC\riscv\riscv32_order_pipeline\riscv_zicsrim_cpu\fpga\led.xpr
+# Log file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/vivado.log
+# Journal file: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.xpr
+INFO: [Project 1-313] Project file moved from 'F:/xilinx_project/AX7020/2017_NewCourse/course_s1/01_led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/ram.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/div.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/rbm.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/cpu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/ifu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/idu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/exu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/clint.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/csr.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/param.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/top.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/mul.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/perips/uart_debug.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/rtu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/utils/dff.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/lsu.v G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/xreg.v}
+INFO: [filemgmt 56-200] Setting project included file 'G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/param.v' to type 'Verilog Header'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 18:39:45 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sys_clk]'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug_en'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'debug_en'. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1330.875 ; gain = 417.156
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+WARNING: [Vivado 12-507] No nets matched '*debug*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+WARNING: [Vivado 12-507] No nets matched '*debug*'.
+WARNING: [Coretcl 2-1122] No objects found.
+set_property top fpga_top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 19:14:54 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 19:15:31 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 19:16:52 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 19:54:49 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 19:55:31 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 20:46:09 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 499 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal debug_en cannot be placed on J15 (IOB_X1Y100) because the pad is already occupied by terminal rst_n possibly due to user constraint [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:22]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*debug*" ]
+WARNING: [Vivado 12-507] No nets matched '*debug*'.
+WARNING: [Coretcl 2-1122] No objects found.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar  2 20:55:16 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 1168 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port debug_en can not be placed on PACKAGE_PIN J15 because the PACKAGE_PIN is occupied by port rst_n [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:22]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u_top/m1_we ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1417.332 ; gain = 0.000
+[Sat Mar  2 20:58:23 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar  2 21:01:42 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sat Mar  2 21:01:42 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 1168 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port debug_en can not be placed on PACKAGE_PIN J15 because the PACKAGE_PIN is occupied by port rst_n [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:22]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+write_schematic -format pdf -orientation portrait G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/schematic.pdf
+G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/rtl/core/schematic.pdf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar  2 21:08:58 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sat Mar  2 21:08:59 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar  2 21:12:55 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sat Mar  2 21:12:55 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar  2 21:17:44 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sat Mar  2 21:17:44 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1634 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp5/fpga_top.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/.Xil/Vivado-3976-DESKTOP-355QV49/dbg_hub_CV.0/out/xsdbm.xdc:10]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1969.254 ; gain = 515.410
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp5/fpga_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.925 . Memory (MB): peak = 1991.594 ; gain = 10.027
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.925 . Memory (MB): peak = 1991.594 ; gain = 10.027
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 286 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 280 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2063.191 ; gain = 609.348
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property flow {Vivado Synthesis 2017} [get_runs synth_1]
+create_run synth_2 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z020clg400-2
+current_run [get_runs synth_2]
+set_property strategy Flow_AreaOptimized_high [get_runs synth_2]
+set_property flow {Vivado Implementation 2017} [get_runs impl_1]
+set_property strategy Performance_Explore [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+update_ip_catalog
+update_ip_catalog
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 21:26:11 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 21:26:11 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 21:32:29 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 21:32:29 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 21:51:26 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 21:51:26 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 21:54:02 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 21:54:02 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 21:54:51 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 21:54:52 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_0 -dir g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.USE_INCLK_SWITCHOVER {false} CONFIG.PRIM_IN_FREQ {50} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {20} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {10} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50} CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} CONFIG.SECONDARY_IN_FREQ {44.445} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKIN2_JITTER_PS {224.99} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {22.499} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {45} CONFIG.MMCM_CLKOUT1_DIVIDE {90} CONFIG.MMCM_CLKOUT2_DIVIDE {18} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {258.893} CONFIG.CLKOUT1_PHASE_ERROR {161.614} CONFIG.CLKOUT2_JITTER {296.755} CONFIG.CLKOUT2_PHASE_ERROR {161.614} CONFIG.CLKOUT3_JITTER {210.144} CONFIG.CLKOUT3_PHASE_ERROR {161.614}] [get_ips clk_wiz_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SECONDARY_IN_FREQ' from '100.000' to '44.445' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '22.499' has been ignored for IP 'clk_wiz_0'
+generate_target {instantiation_template} [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 6 clk_wiz_0_synth_1
+[Sat Mar  2 22:01:35 2024] Launched clk_wiz_0_synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files/sim_scripts -ip_user_files_dir G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files -ipstatic_source_dir G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/modelsim} {questa=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/questa} {riviera=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/riviera} {activehdl=G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 22:17:23 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sat Mar  2 22:17:23 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Sat Mar  2 22:22:13 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+close_design
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk_rst_gen'
+INFO: [Netlist 29-17] Analyzing 1169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_rst_gen/inst'
+Finished Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_rst_gen/inst'
+Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_rst_gen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_rst_gen/inst'
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_rst_gen/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u_top/m1_we ]]
+save_constraints
+launch_runs impl_2 -jobs 6
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 2368.438 ; gain = 0.000
+[Sat Mar  2 22:26:07 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run impl_2
+launch_runs impl_2 -jobs 6
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2368.438 ; gain = 0.000
+[Sat Mar  2 22:28:21 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+close_design
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 1636 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila_0 UUID: 23e7d65a-79bc-59f7-bc47-406c1714dfae 
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top_board.xdc]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top_board.xdc]
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top_early.xdc]
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/.Xil/Vivado-18704-DESKTOP-355QV49/dcp12/fpga_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2368.438 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2368.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 286 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 280 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2414.953 ; gain = 46.516
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sat Mar  2 22:34:36 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+close_hw
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.039 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3061.625 ; gain = 0.066
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+close_hw
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3087.672 ; gain = 22.375
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+ERROR: [Vivado 12-1087] Run 'impl_1' needs to be reset before launching. The run can be reset using the Tcl command 'reset_run impl_1'.
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+current_run [get_runs synth_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 10:29:04 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 10:29:04 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 10:54:29 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 10:54:29 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+2. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 10:55:45 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 10:55:45 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 10:57:01 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 10:57:01 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object led_OBUF was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_ila_0_m1_wdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:08:21
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:08:27
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:08:28
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:08:29
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:08:30
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+close_hw
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes timer_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:09:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:09:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:09:53
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Mar-03 11:10:50
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:11:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:11:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:13:18 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:13:18 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3108.824 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:20:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:20:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes debug_en_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:20:35
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Mar-03 11:20:55
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:20:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:20:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:21:40 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:21:40 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:21:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:21:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:26:38 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:26:38 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3114.332 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:33:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:33:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes debug_en_r -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:34:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:34:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes u_top/m1_we -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:35:11
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 11:40:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 11:40:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:49:24 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:49:24 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:51:44 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:51:44 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:52:32 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 11:52:32 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:57:35 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+current_run [get_runs synth_2]
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 11:57:41 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 11:57:41 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:05:30
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:05:32
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:05:33
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:06:13
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:06:14
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:06:17
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:06:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 12:06:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 12:06:35
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+save_wave_config {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 12:24:40 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 12:24:40 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+current_run [get_runs synth_1]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 12:24:45 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 12:24:45 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar  3 12:25:06 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 12:25:06 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+current_run [get_runs synth_2]
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 12:25:11 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 12:25:11 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+reset_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 3133.965 ; gain = 0.000
+close_design
+close_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 3133.965 ; gain = 0.000
+current_run [get_runs synth_1]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Sun Mar  3 13:44:17 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk_rst_gen'
+INFO: [Netlist 29-17] Analyzing 1169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_rst_gen/inst'
+Finished Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_rst_gen/inst'
+Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_rst_gen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [g:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_rst_gen/inst'
+Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc:8]
+Finished Parsing XDC File [G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 3133.965 ; gain = 0.000
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_rst_gen/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_top/u_uart/uart_baud[0]} {u_top/u_uart/uart_baud[1]} {u_top/u_uart/uart_baud[2]} {u_top/u_uart/uart_baud[3]} {u_top/u_uart/uart_baud[4]} {u_top/u_uart/uart_baud[5]} {u_top/u_uart/uart_baud[6]} {u_top/u_uart/uart_baud[7]} {u_top/u_uart/uart_baud[8]} {u_top/u_uart/uart_baud[9]} {u_top/u_uart/uart_baud[10]} {u_top/u_uart/uart_baud[11]} {u_top/u_uart/uart_baud[12]} {u_top/u_uart/uart_baud[13]} {u_top/u_uart/uart_baud[14]} {u_top/u_uart/uart_baud[15]} {u_top/u_uart/uart_baud[16]} {u_top/u_uart/uart_baud[17]} {u_top/u_uart/uart_baud[18]} {u_top/u_uart/uart_baud[19]} {u_top/u_uart/uart_baud[20]} {u_top/u_uart/uart_baud[21]} {u_top/u_uart/uart_baud[22]} {u_top/u_uart/uart_baud[23]} {u_top/u_uart/uart_baud[24]} {u_top/u_uart/uart_baud[25]} {u_top/u_uart/uart_baud[26]} {u_top/u_uart/uart_baud[27]} {u_top/u_uart/uart_baud[28]} {u_top/u_uart/uart_baud[29]} {u_top/u_uart/uart_baud[30]} {u_top/u_uart/uart_baud[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_top/u_uart/uart_status[0]} {u_top/u_uart/uart_status[1]} {u_top/u_uart/uart_status[2]} {u_top/u_uart/uart_status[3]} {u_top/u_uart/uart_status[4]} {u_top/u_uart/uart_status[5]} {u_top/u_uart/uart_status[6]} {u_top/u_uart/uart_status[7]} {u_top/u_uart/uart_status[8]} {u_top/u_uart/uart_status[9]} {u_top/u_uart/uart_status[10]} {u_top/u_uart/uart_status[11]} {u_top/u_uart/uart_status[12]} {u_top/u_uart/uart_status[13]} {u_top/u_uart/uart_status[14]} {u_top/u_uart/uart_status[15]} {u_top/u_uart/uart_status[16]} {u_top/u_uart/uart_status[17]} {u_top/u_uart/uart_status[18]} {u_top/u_uart/uart_status[19]} {u_top/u_uart/uart_status[20]} {u_top/u_uart/uart_status[21]} {u_top/u_uart/uart_status[22]} {u_top/u_uart/uart_status[23]} {u_top/u_uart/uart_status[24]} {u_top/u_uart/uart_status[25]} {u_top/u_uart/uart_status[26]} {u_top/u_uart/uart_status[27]} {u_top/u_uart/uart_status[28]} {u_top/u_uart/uart_status[29]} {u_top/u_uart/uart_status[30]} {u_top/u_uart/uart_status[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_top/u_uart/tx_data[0]} {u_top/u_uart/tx_data[1]} {u_top/u_uart/tx_data[2]} {u_top/u_uart/tx_data[3]} {u_top/u_uart/tx_data[4]} {u_top/u_uart/tx_data[5]} {u_top/u_uart/tx_data[6]} {u_top/u_uart/tx_data[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_top/u_uart/uart_ctrl[0]} {u_top/u_uart/uart_ctrl[1]} {u_top/u_uart/uart_ctrl[2]} {u_top/u_uart/uart_ctrl[3]} {u_top/u_uart/uart_ctrl[4]} {u_top/u_uart/uart_ctrl[5]} {u_top/u_uart/uart_ctrl[6]} {u_top/u_uart/uart_ctrl[7]} {u_top/u_uart/uart_ctrl[8]} {u_top/u_uart/uart_ctrl[9]} {u_top/u_uart/uart_ctrl[10]} {u_top/u_uart/uart_ctrl[11]} {u_top/u_uart/uart_ctrl[12]} {u_top/u_uart/uart_ctrl[13]} {u_top/u_uart/uart_ctrl[14]} {u_top/u_uart/uart_ctrl[15]} {u_top/u_uart/uart_ctrl[16]} {u_top/u_uart/uart_ctrl[17]} {u_top/u_uart/uart_ctrl[18]} {u_top/u_uart/uart_ctrl[19]} {u_top/u_uart/uart_ctrl[20]} {u_top/u_uart/uart_ctrl[21]} {u_top/u_uart/uart_ctrl[22]} {u_top/u_uart/uart_ctrl[23]} {u_top/u_uart/uart_ctrl[24]} {u_top/u_uart/uart_ctrl[25]} {u_top/u_uart/uart_ctrl[26]} {u_top/u_uart/uart_ctrl[27]} {u_top/u_uart/uart_ctrl[28]} {u_top/u_uart/uart_ctrl[29]} {u_top/u_uart/uart_ctrl[30]} {u_top/u_uart/uart_ctrl[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_top/u_uart/state[0]} {u_top/u_uart/state[1]} {u_top/u_uart/state[2]} {u_top/u_uart/state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_top/u_uart/uart_rx[0]} {u_top/u_uart/uart_rx[1]} {u_top/u_uart/uart_rx[2]} {u_top/u_uart/uart_rx[3]} {u_top/u_uart/uart_rx[4]} {u_top/u_uart/uart_rx[5]} {u_top/u_uart/uart_rx[6]} {u_top/u_uart/uart_rx[7]} {u_top/u_uart/uart_rx[8]} {u_top/u_uart/uart_rx[9]} {u_top/u_uart/uart_rx[10]} {u_top/u_uart/uart_rx[11]} {u_top/u_uart/uart_rx[12]} {u_top/u_uart/uart_rx[13]} {u_top/u_uart/uart_rx[14]} {u_top/u_uart/uart_rx[15]} {u_top/u_uart/uart_rx[16]} {u_top/u_uart/uart_rx[17]} {u_top/u_uart/uart_rx[18]} {u_top/u_uart/uart_rx[19]} {u_top/u_uart/uart_rx[20]} {u_top/u_uart/uart_rx[21]} {u_top/u_uart/uart_rx[22]} {u_top/u_uart/uart_rx[23]} {u_top/u_uart/uart_rx[24]} {u_top/u_uart/uart_rx[25]} {u_top/u_uart/uart_rx[26]} {u_top/u_uart/uart_rx[27]} {u_top/u_uart/uart_rx[28]} {u_top/u_uart/uart_rx[29]} {u_top/u_uart/uart_rx[30]} {u_top/u_uart/uart_rx[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u_top/u_uart_debug/mem_addr_o[0]} {u_top/u_uart_debug/mem_addr_o[1]} {u_top/u_uart_debug/mem_addr_o[2]} {u_top/u_uart_debug/mem_addr_o[3]} {u_top/u_uart_debug/mem_addr_o[4]} {u_top/u_uart_debug/mem_addr_o[5]} {u_top/u_uart_debug/mem_addr_o[6]} {u_top/u_uart_debug/mem_addr_o[7]} {u_top/u_uart_debug/mem_addr_o[8]} {u_top/u_uart_debug/mem_addr_o[9]} {u_top/u_uart_debug/mem_addr_o[10]} {u_top/u_uart_debug/mem_addr_o[11]} {u_top/u_uart_debug/mem_addr_o[12]} {u_top/u_uart_debug/mem_addr_o[13]} {u_top/u_uart_debug/mem_addr_o[14]} {u_top/u_uart_debug/mem_addr_o[15]} {u_top/u_uart_debug/mem_addr_o[16]} {u_top/u_uart_debug/mem_addr_o[17]} {u_top/u_uart_debug/mem_addr_o[18]} {u_top/u_uart_debug/mem_addr_o[19]} {u_top/u_uart_debug/mem_addr_o[20]} {u_top/u_uart_debug/mem_addr_o[21]} {u_top/u_uart_debug/mem_addr_o[22]} {u_top/u_uart_debug/mem_addr_o[23]} {u_top/u_uart_debug/mem_addr_o[24]} {u_top/u_uart_debug/mem_addr_o[25]} {u_top/u_uart_debug/mem_addr_o[26]} {u_top/u_uart_debug/mem_addr_o[27]} {u_top/u_uart_debug/mem_addr_o[28]} {u_top/u_uart_debug/mem_addr_o[29]} {u_top/u_uart_debug/mem_addr_o[30]} {u_top/u_uart_debug/mem_addr_o[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 14 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {u_top/u_uart_debug/state[0]} {u_top/u_uart_debug/state[1]} {u_top/u_uart_debug/state[2]} {u_top/u_uart_debug/state[3]} {u_top/u_uart_debug/state[4]} {u_top/u_uart_debug/state[5]} {u_top/u_uart_debug/state[6]} {u_top/u_uart_debug/state[7]} {u_top/u_uart_debug/state[8]} {u_top/u_uart_debug/state[9]} {u_top/u_uart_debug/state[10]} {u_top/u_uart_debug/state[11]} {u_top/u_uart_debug/state[12]} {u_top/u_uart_debug/state[13]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {u_top/u_uart_debug/mem_wdata_o[0]} {u_top/u_uart_debug/mem_wdata_o[1]} {u_top/u_uart_debug/mem_wdata_o[2]} {u_top/u_uart_debug/mem_wdata_o[3]} {u_top/u_uart_debug/mem_wdata_o[4]} {u_top/u_uart_debug/mem_wdata_o[5]} {u_top/u_uart_debug/mem_wdata_o[6]} {u_top/u_uart_debug/mem_wdata_o[7]} {u_top/u_uart_debug/mem_wdata_o[8]} {u_top/u_uart_debug/mem_wdata_o[9]} {u_top/u_uart_debug/mem_wdata_o[10]} {u_top/u_uart_debug/mem_wdata_o[11]} {u_top/u_uart_debug/mem_wdata_o[12]} {u_top/u_uart_debug/mem_wdata_o[13]} {u_top/u_uart_debug/mem_wdata_o[14]} {u_top/u_uart_debug/mem_wdata_o[15]} {u_top/u_uart_debug/mem_wdata_o[16]} {u_top/u_uart_debug/mem_wdata_o[17]} {u_top/u_uart_debug/mem_wdata_o[18]} {u_top/u_uart_debug/mem_wdata_o[19]} {u_top/u_uart_debug/mem_wdata_o[20]} {u_top/u_uart_debug/mem_wdata_o[21]} {u_top/u_uart_debug/mem_wdata_o[22]} {u_top/u_uart_debug/mem_wdata_o[23]} {u_top/u_uart_debug/mem_wdata_o[24]} {u_top/u_uart_debug/mem_wdata_o[25]} {u_top/u_uart_debug/mem_wdata_o[26]} {u_top/u_uart_debug/mem_wdata_o[27]} {u_top/u_uart_debug/mem_wdata_o[28]} {u_top/u_uart_debug/mem_wdata_o[29]} {u_top/u_uart_debug/mem_wdata_o[30]} {u_top/u_uart_debug/mem_wdata_o[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {u_top/m1_rdata[0]} {u_top/m1_rdata[1]} {u_top/m1_rdata[2]} {u_top/m1_rdata[3]} {u_top/m1_rdata[4]} {u_top/m1_rdata[5]} {u_top/m1_rdata[6]} {u_top/m1_rdata[7]} {u_top/m1_rdata[8]} {u_top/m1_rdata[9]} {u_top/m1_rdata[10]} {u_top/m1_rdata[11]} {u_top/m1_rdata[12]} {u_top/m1_rdata[13]} {u_top/m1_rdata[14]} {u_top/m1_rdata[15]} {u_top/m1_rdata[16]} {u_top/m1_rdata[17]} {u_top/m1_rdata[18]} {u_top/m1_rdata[19]} {u_top/m1_rdata[20]} {u_top/m1_rdata[21]} {u_top/m1_rdata[22]} {u_top/m1_rdata[23]} {u_top/m1_rdata[24]} {u_top/m1_rdata[25]} {u_top/m1_rdata[26]} {u_top/m1_rdata[27]} {u_top/m1_rdata[28]} {u_top/m1_rdata[29]} {u_top/m1_rdata[30]} {u_top/m1_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {u_top/m0_rdata[0]} {u_top/m0_rdata[1]} {u_top/m0_rdata[2]} {u_top/m0_rdata[3]} {u_top/m0_rdata[4]} {u_top/m0_rdata[5]} {u_top/m0_rdata[6]} {u_top/m0_rdata[7]} {u_top/m0_rdata[8]} {u_top/m0_rdata[9]} {u_top/m0_rdata[10]} {u_top/m0_rdata[11]} {u_top/m0_rdata[12]} {u_top/m0_rdata[13]} {u_top/m0_rdata[14]} {u_top/m0_rdata[15]} {u_top/m0_rdata[16]} {u_top/m0_rdata[17]} {u_top/m0_rdata[18]} {u_top/m0_rdata[19]} {u_top/m0_rdata[20]} {u_top/m0_rdata[21]} {u_top/m0_rdata[22]} {u_top/m0_rdata[23]} {u_top/m0_rdata[24]} {u_top/m0_rdata[25]} {u_top/m0_rdata[26]} {u_top/m0_rdata[27]} {u_top/m0_rdata[28]} {u_top/m0_rdata[29]} {u_top/m0_rdata[30]} {u_top/m0_rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {u_top/m0_addr[0]} {u_top/m0_addr[1]} {u_top/m0_addr[2]} {u_top/m0_addr[3]} {u_top/m0_addr[4]} {u_top/m0_addr[5]} {u_top/m0_addr[6]} {u_top/m0_addr[7]} {u_top/m0_addr[8]} {u_top/m0_addr[9]} {u_top/m0_addr[10]} {u_top/m0_addr[11]} {u_top/m0_addr[12]} {u_top/m0_addr[13]} {u_top/m0_addr[14]} {u_top/m0_addr[15]} {u_top/m0_addr[16]} {u_top/m0_addr[17]} {u_top/m0_addr[18]} {u_top/m0_addr[19]} {u_top/m0_addr[20]} {u_top/m0_addr[21]} {u_top/m0_addr[22]} {u_top/m0_addr[23]} {u_top/m0_addr[24]} {u_top/m0_addr[25]} {u_top/m0_addr[26]} {u_top/m0_addr[27]} {u_top/m0_addr[28]} {u_top/m0_addr[29]} {u_top/m0_addr[30]} {u_top/m0_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {u_top/m1_size[0]} {u_top/m1_size[1]} {u_top/m1_size[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {u_top/m1_addr[0]} {u_top/m1_addr[1]} {u_top/m1_addr[2]} {u_top/m1_addr[3]} {u_top/m1_addr[4]} {u_top/m1_addr[5]} {u_top/m1_addr[6]} {u_top/m1_addr[7]} {u_top/m1_addr[8]} {u_top/m1_addr[9]} {u_top/m1_addr[10]} {u_top/m1_addr[11]} {u_top/m1_addr[12]} {u_top/m1_addr[13]} {u_top/m1_addr[14]} {u_top/m1_addr[15]} {u_top/m1_addr[16]} {u_top/m1_addr[17]} {u_top/m1_addr[18]} {u_top/m1_addr[19]} {u_top/m1_addr[20]} {u_top/m1_addr[21]} {u_top/m1_addr[22]} {u_top/m1_addr[23]} {u_top/m1_addr[24]} {u_top/m1_addr[25]} {u_top/m1_addr[26]} {u_top/m1_addr[27]} {u_top/m1_addr[28]} {u_top/m1_addr[29]} {u_top/m1_addr[30]} {u_top/m1_addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {u_top/m1_wdata[0]} {u_top/m1_wdata[1]} {u_top/m1_wdata[2]} {u_top/m1_wdata[3]} {u_top/m1_wdata[4]} {u_top/m1_wdata[5]} {u_top/m1_wdata[6]} {u_top/m1_wdata[7]} {u_top/m1_wdata[8]} {u_top/m1_wdata[9]} {u_top/m1_wdata[10]} {u_top/m1_wdata[11]} {u_top/m1_wdata[12]} {u_top/m1_wdata[13]} {u_top/m1_wdata[14]} {u_top/m1_wdata[15]} {u_top/m1_wdata[16]} {u_top/m1_wdata[17]} {u_top/m1_wdata[18]} {u_top/m1_wdata[19]} {u_top/m1_wdata[20]} {u_top/m1_wdata[21]} {u_top/m1_wdata[22]} {u_top/m1_wdata[23]} {u_top/m1_wdata[24]} {u_top/m1_wdata[25]} {u_top/m1_wdata[26]} {u_top/m1_wdata[27]} {u_top/m1_wdata[28]} {u_top/m1_wdata[29]} {u_top/m1_wdata[30]} {u_top/m1_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list {debug_en_r[0]} {debug_en_r[1]} {debug_en_r[2]} {debug_en_r[3]} {debug_en_r[4]} {debug_en_r[5]} {debug_en_r[6]} {debug_en_r[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list {timer_cnt[0]} {timer_cnt[1]} {timer_cnt[2]} {timer_cnt[3]} {timer_cnt[4]} {timer_cnt[5]} {timer_cnt[6]} {timer_cnt[7]} {timer_cnt[8]} {timer_cnt[9]} {timer_cnt[10]} {timer_cnt[11]} {timer_cnt[12]} {timer_cnt[13]} {timer_cnt[14]} {timer_cnt[15]} {timer_cnt[16]} {timer_cnt[17]} {timer_cnt[18]} {timer_cnt[19]} {timer_cnt[20]} {timer_cnt[21]} {timer_cnt[22]} {timer_cnt[23]} {timer_cnt[24]} {timer_cnt[25]} {timer_cnt[26]} {timer_cnt[27]} {timer_cnt[28]} {timer_cnt[29]} {timer_cnt[30]} {timer_cnt[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list debug_en_w ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list u_top/m1_rd ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list u_top/m1_we ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list u_top/u_uart_debug/mem_rd_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list u_top/u_uart_debug/mem_we_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list u_top/u_uart/rx_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list u_top/u_uart/rx_start ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3133.965 ; gain = 0.000
+[Sun Mar  3 13:50:06 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z020_1 and the probes file(s) G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). The probes file(s) have 0 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object u_ila_0_m1_wdata was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} {u_top/u_uart/rx_done} {u_top/u_uart/rx_start} {u_top/u_uart/state} {u_top/u_uart/tx_data} {u_top/u_uart/uart_baud} {u_top/u_uart/uart_ctrl} {u_top/u_uart/uart_rx} {u_top/u_uart/uart_status} {u_top/u_uart_debug/mem_addr_o} {u_top/u_uart_debug/mem_rd_o} {u_top/u_uart_debug/mem_wdata_o} {u_top/u_uart_debug/mem_we_o} {u_top/u_uart_debug/state} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes u_top/m1_we -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes u_top/u_uart/rx_start -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:05:30
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:05:53
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/C305BB48ABCD]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object u_ila_0_m1_wdata was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:06:03
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Mar-03 14:06:04
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:06:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 14:06:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {debug_en_r} {debug_en_w} {u_ila_0_m1_addr} {u_ila_0_m1_rd} {u_ila_0_m1_rdata} {u_top/m0_addr} {u_top/m0_rdata} {u_top/m1_addr} {u_top/m1_size} {u_top/m1_wdata} {u_top/m1_we} {u_top/u_uart/rx_done} {u_top/u_uart/rx_start} {u_top/u_uart/state} {u_top/u_uart/tx_data} {u_top/u_uart/uart_baud} {u_top/u_uart/uart_ctrl} {u_top/u_uart/uart_rx} {u_top/u_uart/uart_status} {u_top/u_uart_debug/mem_addr_o} {u_top/u_uart_debug/mem_rd_o} {u_top/u_uart_debug/mem_wdata_o} {u_top/u_uart_debug/mem_we_o} {u_top/u_uart_debug/state} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {timer_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:06:37
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Mar-03 14:07:55
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Mar-03 14:07:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Mar-03 14:07:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Mar  3 14:34:32 2024] Launched synth_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_1/runme.log
+[Sun Mar  3 14:34:32 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Mar  3 14:40:46 2024] Launched impl_1...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/runme.log
+current_run [get_runs synth_2]
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 14:40:50 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 14:40:50 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 14:42:20 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 14:42:20 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 14:49:03 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Mar  3 14:54:25 2024] Launched synth_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/synth_2/runme.log
+[Sun Mar  3 14:54:25 2024] Launched impl_2...
+Run output will be captured here: G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C305BB48ABCD
+set_property PROGRAM.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {G:/FPGA_ZYNQ_IC_Learn/IC/riscv/riscv32_order_pipeline/riscv_zicsrim_cpu/fpga/led.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

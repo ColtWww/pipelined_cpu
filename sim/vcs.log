@@ -1,0 +1,256 @@
+Command: vcs -full64 -l vcs.log -sverilog -timescale=1ns/1ps -debug_pp -debug_access+all \
++error+10000 +vcs+initreg+random +lint=TFIPC-L +vcs+lic+wait +plusarg_save +define+GB_SERDES_TIMESCALE=1ns/1fs \
+-fsdb -top tb_top -f filelist.vc -cm_dir sim_cov
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP2_Full64 -- Fri Apr 28 17:11:58 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../rtl/define.v'
+Parsing design file '../rtl/utils/async_fifo/async_bidir_fifo.v'
+Parsing design file '../rtl/utils/async_fifo/async_bidir_ramif_fifo.v'
+Parsing design file '../rtl/utils/async_fifo/async_fifo.v'
+Parsing design file '../rtl/utils/async_fifo/fifo_2mem.v'
+Parsing design file '../rtl/utils/async_fifo/fifomem_dp.v'
+Parsing design file '../rtl/utils/async_fifo/rptr_empty.v'
+Parsing design file '../rtl/utils/async_fifo/sync_ptr.v'
+Parsing design file '../rtl/utils/async_fifo/sync_r2w.v'
+Parsing design file '../rtl/utils/async_fifo/sync_w2r.v'
+Parsing design file '../rtl/utils/async_fifo/wptr_full.v'
+Parsing design file '../rtl/utils/gen_ram.v'
+Parsing design file '../rtl/utils/gen_buf.v'
+Parsing design file '../rtl/utils/gen_dff.v'
+Parsing design file '../rtl/utils/sync_fifo.v'
+Parsing design file '../rtl/utils/sync_fifo_reg.v'
+Parsing design file '../rtl/utils/sig_sync.sv'
+Parsing design file '../rtl/utils/sig_sync_xn.sv'
+Parsing design file '../rtl/sys_bus/AXI_Arbiter_R.sv'
+Parsing design file '../rtl/sys_bus/AXI_Arbiter_W.sv'
+Parsing design file '../rtl/sys_bus/AXI_Interconnect.sv'
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/sys_bus/AXI_Interconnect.sv'.
+Parsing design file '../rtl/sys_bus/AXI_Interface.sv'
+Parsing design file '../rtl/sys_bus/AXI_Master_Mux_R.sv'
+Parsing design file '../rtl/sys_bus/AXI_Master_Mux_W.sv'
+Parsing design file '../rtl/sys_bus/AXI_RETIME.v'
+Parsing included file '../rtl/core/../core/defines.v'.
+Back to file '../rtl/sys_bus/AXI_RETIME.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/sys_bus/AXI_RETIME.v'.
+Parsing design file '../rtl/sys_bus/AXI_Slave_Mux_R.sv'
+Parsing design file '../rtl/sys_bus/AXI_Slave_Mux_W.sv'
+Parsing design file '../rtl/utils/single_port_ram_cache.v'
+Parsing included file '../rtl/define.v'.
+Back to file '../rtl/utils/single_port_ram_cache.v'.
+Parsing design file '../rtl/utils/single_port_ram.v'
+Parsing included file '../rtl/define.v'.
+Back to file '../rtl/utils/single_port_ram.v'.
+Parsing design file '../rtl/perips/rom.v'
+Parsing included file '../rtl/define.v'.
+Back to file '../rtl/perips/rom.v'.
+Parsing design file '../rtl/perips/ram.v'
+Parsing included file '../rtl/define.v'.
+Back to file '../rtl/perips/ram.v'.
+Parsing design file '../rtl/cache/icache.v'
+Parsing included file '../rtl/core/../core/defines.v'.
+Back to file '../rtl/cache/icache.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/cache/icache.v'.
+Parsing design file '../rtl/cache/dcache_utils.v'
+Parsing included file '../rtl/core/../core/defines.v'.
+Back to file '../rtl/cache/dcache_utils.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/cache/dcache_utils.v'.
+Parsing design file '../rtl/cache/dcache_axi.v'
+Parsing included file '../rtl/core/../core/defines.v'.
+Back to file '../rtl/cache/dcache_axi.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/cache/dcache_axi.v'.
+Parsing design file '../rtl/cache/dcache_core.v'
+Parsing design file '../rtl/cache/dcache_if_pmem.v'
+Parsing design file '../rtl/cache/dcache.v'
+Parsing included file '../rtl/core/../core/defines.v'.
+Back to file '../rtl/cache/dcache.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/cache/dcache.v'.
+Parsing design file '../rtl/core/defines.v'
+Parsing design file '../rtl/core/control.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/control.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/control.v'.
+Parsing design file '../rtl/core/csr.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/csr.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/csr.v'.
+Parsing design file '../rtl/core/decoder.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/decoder.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/decoder.v'.
+Parsing design file '../rtl/core/divider.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/divider.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/divider.v'.
+Parsing design file '../rtl/core/exu.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/exu.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/exu.v'.
+Parsing design file '../rtl/core/fetch.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/fetch.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/fetch.v'.
+Parsing design file '../rtl/core/issue.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/issue.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/issue.v'.
+Parsing design file '../rtl/core/lsu.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/lsu.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/lsu.v'.
+Parsing design file '../rtl/core/mmu.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/mmu.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/mmu.v'.
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/mmu.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/mmu.v'.
+Parsing design file '../rtl/core/multiplier.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/multiplier.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/multiplier.v'.
+Parsing design file '../rtl/core/predictor.v'
+Parsing included file '../rtl/define.v'.
+Back to file '../rtl/core/predictor.v'.
+Parsing design file '../rtl/core/regfile.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/regfile.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/regfile.v'.
+Parsing design file '../rtl/core/rename.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/rename.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/rename.v'.
+Parsing design file '../rtl/core/riscv_core.v'
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../rtl/core/riscv_core.v'.
+Parsing included file '../rtl/core/../define.v'.
+Back to file '../rtl/core/riscv_core.v'.
+Parsing design file '../tb/axi_mast_bfm.sv'
+Parsing design file '../tb/axi_slv_bfm.sv'
+Parsing design file '../tb/core_tb.sv'
+Parsing included file '../rtl/define.v'.
+Back to file '../tb/core_tb.sv'.
+Parsing included file '../rtl/core/defines.v'.
+Back to file '../tb/core_tb.sv'.
+Top Level Modules:
+       tb_top
+
+Warning-[UII-L] Interface not instantiated
+../rtl/sys_bus/AXI_Interface.sv, 32
+  Interface 'axi4' defined in logic library 'work' is never instantiated in 
+  design. It will be ignored.
+
+TimeScale is 1 ns / 1 ps
+
+Lint-[TFIPC-L] Too few instance port connections
+../rtl/cache/icache.v, 607
+icache, "AXI_RETIME #(.AXI4_RETIME_WR_REQ(1), .AXI4_RETIME_WR_RESP(1), .AXI4_RETIME_RD_REQ(1), .AXI4_RETIME_RD_RESP(1), .ASYNC(1)) u_icache_retime( .clk_i (axi_clk_i),  .rst_i ((~axi_rst_n_i)),  .axi_clk_i (clk_i),  .axi_rst_i ((~rst_n_i)),  .inport_awvalid_i (axi_awvalid_w),  .inport_awaddr_i (axi_awaddr_w),  .inport_awid_i (axi_awid_w),  .inport_awlen_i (axi_awlen_w),  .inport_awburst_i (axi_awburst_w),  .inport_wvalid_i (axi_wvalid_w),  .inport_wdata_i (axi_wdata_w),  .inport_wstrb_i (axi_wstrb_w),  .inport_wlast_i (axi_wlast_w),  .inport_bready_i (axi_bready_w),  .inport_arvalid_i (axi_arvalid_w),  .inport_araddr_i (axi_araddr_w),  .inport_arid_i (axi_arid_w),  .inport_arlen_i (axi_arlen_w),  .inport_arburst_i (axi_arburst_w),  .inport_rready_i (axi_rready_w ... "
+  The above instance has fewer port connections than the module definition,
+  input port 'inport_awlock_i' is not connected,
+  input port 'inport_arlock_i' is not connected,
+  output port 'outport_awlock_o' is not connected,
+  output port 'outport_arlock_o' is not connected.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/cache/dcache_axi.v, 217
+"dcache_axi_bridge u_axi( .clk_i (clk_i),  .rst_i ((~rst_n_i)),  .inport_atomic_i (req_atomic_w),  .inport_valid_i (req_can_issue_w),  .inport_write_i (req_is_write_w),  .inport_wdata_i (req_w[63:32]),  .inport_wstrb_i (req_w[67:64]),  .inport_addr_i ({req_w[31:2], 2'b0}),  .inport_id_i (AXI_ID),  .inport_len_i (req_len_w),  .inport_burst_i (2'b1),  .inport_accept_o (accept_w),  .inport_bready_i (1'b1),  .inport_rready_i (1'b1),  .inport_bvalid_o (bvalid_w),  .inport_bresp_o (bresp_w),  .inport_rvalid_o (rvalid_w),  .inport_rdata_o (inport_read_data_o),  .inport_rresp_o (rresp_w),  .outport_awlock_o (axi_awlock_w),  .outport_arlock_o (axi_arlock_w),  .outport_awvalid_o (axi_awvalid_w),  .outport_awaddr_o (axi_awaddr_w),  .outport_awid_o (axi_awid_w),  .o ... "
+  The following 32-bit expression is connected to 4-bit port "inport_id_i" of 
+  module "dcache_axi_bridge", instance "u_axi".
+  Expression: AXI_ID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/core_tb.sv, 204
+"riscv_core u_riscv_core( .clk (clk),  .rst_n_i (rst_n),  .axi_clk (axi_clk),  .axi_rst_n (axi_rst_n),  .jtag_halt_req_i ('b0),  .jtag_reset_req_i ('b0),  .jtag_reg_addr_i ('b0),  .jtag_reg_data_i ('b0),  .jtag_reg_we_i ('b0),  .intr_i ('b0),  .imem_axi_m_awid (imem_axi_m_awid),  .imem_axi_m_awvalid (imem_axi_m_awvalid),  .imem_axi_m_awaddr (imem_axi_m_awaddr),  .imem_axi_m_awlen (imem_axi_m_awlen),  .imem_axi_m_awsize (imem_axi_m_awsize),  .imem_axi_m_awburst (imem_axi_m_awburst),  .imem_axi_m_awready (imem_axi_m_awready),  .imem_axi_m_wid (imem_axi_m_wid),  .imem_axi_m_wvalid (imem_axi_m_wvalid),  .imem_axi_m_wdata (imem_axi_m_wdata),  .imem_axi_m_wstrb (imem_axi_m_wstrb),  .imem_axi_m_wlast (imem_axi_m_wlast),  .imem_axi_m_wready (imem_axi_m_wready),  ... "
+  The following 32-bit expression is connected to 1-bit port "jtag_halt_req_i"
+  of module "riscv_core", instance "u_riscv_core".
+  Expression: 'b0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/core_tb.sv, 204
+"riscv_core u_riscv_core( .clk (clk),  .rst_n_i (rst_n),  .axi_clk (axi_clk),  .axi_rst_n (axi_rst_n),  .jtag_halt_req_i ('b0),  .jtag_reset_req_i ('b0),  .jtag_reg_addr_i ('b0),  .jtag_reg_data_i ('b0),  .jtag_reg_we_i ('b0),  .intr_i ('b0),  .imem_axi_m_awid (imem_axi_m_awid),  .imem_axi_m_awvalid (imem_axi_m_awvalid),  .imem_axi_m_awaddr (imem_axi_m_awaddr),  .imem_axi_m_awlen (imem_axi_m_awlen),  .imem_axi_m_awsize (imem_axi_m_awsize),  .imem_axi_m_awburst (imem_axi_m_awburst),  .imem_axi_m_awready (imem_axi_m_awready),  .imem_axi_m_wid (imem_axi_m_wid),  .imem_axi_m_wvalid (imem_axi_m_wvalid),  .imem_axi_m_wdata (imem_axi_m_wdata),  .imem_axi_m_wstrb (imem_axi_m_wstrb),  .imem_axi_m_wlast (imem_axi_m_wlast),  .imem_axi_m_wready (imem_axi_m_wready),  ... "
+  The following 32-bit expression is connected to 1-bit port 
+  "jtag_reset_req_i" of module "riscv_core", instance "u_riscv_core".
+  Expression: 'b0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/core_tb.sv, 204
+"riscv_core u_riscv_core( .clk (clk),  .rst_n_i (rst_n),  .axi_clk (axi_clk),  .axi_rst_n (axi_rst_n),  .jtag_halt_req_i ('b0),  .jtag_reset_req_i ('b0),  .jtag_reg_addr_i ('b0),  .jtag_reg_data_i ('b0),  .jtag_reg_we_i ('b0),  .intr_i ('b0),  .imem_axi_m_awid (imem_axi_m_awid),  .imem_axi_m_awvalid (imem_axi_m_awvalid),  .imem_axi_m_awaddr (imem_axi_m_awaddr),  .imem_axi_m_awlen (imem_axi_m_awlen),  .imem_axi_m_awsize (imem_axi_m_awsize),  .imem_axi_m_awburst (imem_axi_m_awburst),  .imem_axi_m_awready (imem_axi_m_awready),  .imem_axi_m_wid (imem_axi_m_wid),  .imem_axi_m_wvalid (imem_axi_m_wvalid),  .imem_axi_m_wdata (imem_axi_m_wdata),  .imem_axi_m_wstrb (imem_axi_m_wstrb),  .imem_axi_m_wlast (imem_axi_m_wlast),  .imem_axi_m_wready (imem_axi_m_wready),  ... "
+  The following 32-bit expression is connected to 5-bit port "jtag_reg_addr_i"
+  of module "riscv_core", instance "u_riscv_core".
+  Expression: 'b0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/core_tb.sv, 204
+"riscv_core u_riscv_core( .clk (clk),  .rst_n_i (rst_n),  .axi_clk (axi_clk),  .axi_rst_n (axi_rst_n),  .jtag_halt_req_i ('b0),  .jtag_reset_req_i ('b0),  .jtag_reg_addr_i ('b0),  .jtag_reg_data_i ('b0),  .jtag_reg_we_i ('b0),  .intr_i ('b0),  .imem_axi_m_awid (imem_axi_m_awid),  .imem_axi_m_awvalid (imem_axi_m_awvalid),  .imem_axi_m_awaddr (imem_axi_m_awaddr),  .imem_axi_m_awlen (imem_axi_m_awlen),  .imem_axi_m_awsize (imem_axi_m_awsize),  .imem_axi_m_awburst (imem_axi_m_awburst),  .imem_axi_m_awready (imem_axi_m_awready),  .imem_axi_m_wid (imem_axi_m_wid),  .imem_axi_m_wvalid (imem_axi_m_wvalid),  .imem_axi_m_wdata (imem_axi_m_wdata),  .imem_axi_m_wstrb (imem_axi_m_wstrb),  .imem_axi_m_wlast (imem_axi_m_wlast),  .imem_axi_m_wready (imem_axi_m_wready),  ... "
+  The following 32-bit expression is connected to 1-bit port "jtag_reg_we_i" 
+  of module "riscv_core", instance "u_riscv_core".
+  Expression: 'b0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/sys_bus/AXI_RETIME.v, 287
+" async_fifo #(READ_REQ_W, , ) genblk4.genblk1.u_read_req( .wclk (axi_clk_i),  .wrst_n ((~axi_rst_i)),  .winc (inport_arvalid_i),  .wdata ({inport_arlock_i, inport_araddr_i, inport_arid_i, inport_arlen_i, inport_arburst_i}),  .wfull (genblk4.inport_arready_o_inv),  .rclk (clk_i),  .rrst_n ((~rst_i)),  .rinc (outport_arready_i),  .rdata (genblk4.read_req_out_w),  .rempty (genblk4.outport_arvalid_o_inv));"
+  The following 47-bit expression is connected to 46-bit port "wdata" of 
+  module "async_fifo", instance "genblk4.genblk1.u_read_req".
+  Expression: {inport_arlock_i, inport_araddr_i, inport_arid_i, 
+  inport_arlen_i, inport_arburst_i}
+  	use +lint=PCWM for more details
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+25 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory `/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib \
+-L/eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib     _27864_archive_1.so _prev_archive_1.so \
+_csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lnuma -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc \
+-lvfs    -lvcsnew -lsimprofile -luclinative /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /eda/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o \
+/eda/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/xuhan/learn_prj/RISC-V/rvsoc_xuhan/sim_core/csrc' \
+
+CPU time: 1.557 seconds to compile + .422 seconds to elab + .443 seconds to link
